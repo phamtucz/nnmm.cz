@@ -13,7 +13,7 @@ var plans = {
 	}
 }
 
-var STF_EMBEDDED = window.location.href.indexOf("shopthisfeed.com") == -1 &&
+var STF_EMBEDDED = window.location.href.indexOf("www.nnmm.cz") == -1 &&
 				   window.location.href.indexOf("localhost") == -1;
 
 function setImageHeightEqualsWidth(element) {
@@ -32,7 +32,7 @@ function createDotLink(number, url, posX, posY, item_link_id) {
 
 	$s.click(function() {
 		$.ajax({
-			url: "//www.shopthisfeed.com/f/record_item_hit",
+			url: "//www.nnmm.cz/f/record_item_hit",
 			type: "post",
 			data: { item_link_id: item_link_id }
 		});
@@ -59,7 +59,7 @@ function createViewLink(link_obj, index, mobile) {
 
 	$a.click(function() {
 		$.ajax({
-			url: "//www.shopthisfeed.com/f/record_item_hit",
+			url: "//www.nnmm.cz/f/record_item_hit",
 			type: "post",
 			data: { item_link_id: link_id }
 		});
