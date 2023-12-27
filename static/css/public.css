@@ -63,10 +63,10 @@ body .navbar.navbar-default .sign_in_button {
 }
 
 .navbar-collapse { 
-	background: #d10910;
+	background: #1b8b2a;
 } 
 .navbar-toggle {
-	border: 1px solid #d10910;
+	border: 1px solid #1b8b2a;
 }
 
 body .navbar-nav>li>a {
