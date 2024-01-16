@@ -14,7 +14,7 @@
 
 .navbar {
     height: 60px;
-    background-color: #1b8b2a;
+    background-color: #54bd06;
 }
 
 .navbar .logo {
@@ -24,7 +24,7 @@
 }
 
 .navbar .btn {
-    background-color: #1b8b2a;
+    background-color: #54bd06;
     border-color: rgb(212, 237, 49);
 }
 
@@ -54,7 +54,7 @@
 }
 
 .navbar.unscrolled .navbar-nav li > a {
-    color: #1b8b2a;
+    color: #54bd06;
 }
 
 body .navbar.navbar-default .sign_in_button {
@@ -63,11 +63,11 @@ body .navbar.navbar-default .sign_in_button {
 }
 
 .navbar-collapse {
-    background: #1b8b2a;
+    background: #54bd06;
 }
 
 .navbar-toggle {
-    border: 1px solid #1b8b2a;
+    border: 1px solid #54bd06;
 }
 
 body .navbar-nav>li>a {
@@ -119,7 +119,7 @@ body .navbar-nav>li>a {
 }
 
 .home_block_2 {
-    background-color: #1b8b2a;
+    background-color: #54bd06;
     color: white;
 }
 
