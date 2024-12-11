@@ -1,6 +1,6 @@
 /* =============================================================================
-    App specific CSS file.
-    ========================================================================== */
+   App specific CSS file.
+   ========================================================================== */
 
 /* universal */
 
@@ -44,7 +44,9 @@ textarea {
     font-size: 16px;
     height: auto;
     padding: 10px;
-    box-sizing: border-box; /* Simplified box-sizing */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* footer */
@@ -107,17 +109,20 @@ footer .footer-nav {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.8) url('../../img/FlatPreloaders/128x128/Preloader_2/Preloader_2.gif') 50% 50% no-repeat;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../../img/FlatPreloaders/128x128/Preloader_2/Preloader_2.gif') 
+                50% 50% 
+                no-repeat;
 }
 
 /* When the body has the loading class, we turn
-    the scrollbar off with overflow:hidden */
+   the scrollbar off with overflow:hidden */
 body.loading {
     overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
-    waiting_modal element will be visible */
+   waiting_modal element will be visible */
 body.loading .waiting_modal {
     display: block;
 }
@@ -130,42 +135,56 @@ body.loading .waiting_modal {
     color: #c0392b;
 }
 
-a.long_url {
-    white-space: pre-wrap; /* Modern browsers */
+{
+color: #c0392b;
 }
+
+a.long_url {
+white-space: pre-wrap;
+ /* css-3 */
+white-space: -moz-pre-wrap;
+ /* Mozilla, since 1999 */
+white-space: -pre-wrap;
+ /* Opera 4-6 */
+white-space: -o-pre-wrap;
+ /* Opera 7 */
+word-wrap: break-word;
+ /* Internet Explorer 5.5+ */;
+}
+
 
 /* plan */
 
 .select_plan_div .plan {
-    border: 1px solid #4183D7;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+border: 1px solid #4183D7;
+border-radius: 10px;
+padding: 10px;
+text-align: center;
+margin-bottom: 20px;
 }
 
 .select_plan_div .plan:hover {
-    border: none;
+border: none;
 }
 
 .select_plan_div .plan:hover a {
-    color: white;
+color: white;
 }
 
 .select_plan_div .plan1:hover {
-    background-color: #89C4F4;
+background-color: #89C4F4;
 }
 
 .select_plan_div .plan2:hover {
-    background-color: #4B77BE;
-    color: white;
+background-color: #4B77BE;
+color: white;
 }
 
 .select_plan_div .plan3:hover {
-    background-color: #3A539B;
-    color: white;
+background-color: #3A539B;
+color: white;
 }
 
 ol {
-    padding-left: 15px;
+padding-left: 15px;
 }
