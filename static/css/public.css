@@ -25,7 +25,7 @@
 
 .navbar .btn {
     background-color: #666;
-    border-color: #000;
+    border-color: #b40101;
 }
 
 .navbar:not(.unscrolled) .logo.black {
@@ -63,7 +63,7 @@ body .navbar.navbar-default .sign_in_button {
 }
 
 .navbar-collapse {
-    background: #000;
+    background: #b40101;
 }
 
 .navbar-toggle {
