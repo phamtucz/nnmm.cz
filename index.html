@@ -43,6 +43,8 @@
 </head>
 
 <body>
+    <!-- Facebook SDK root element -->
+    <div id="fb-root"></div>
     <header>
         <nav class="navbar navbar-default navbar-fixed-top unscrolled">
             <div class="container">
@@ -347,23 +349,19 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="static/libs/jQuery/dist/jquery.min.js"></script>
+    <!-- Skripty -->
+    <script src="static/libs/jquery/dist/jquery.min.js"></script>
     <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/script.js"></script>
-    <script src="static/js/home.js"></script>
-    
+    <script src="static/js/main.js"></script>
+
     <!-- Facebook SDK -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v12.0"></script>
-    
+    <script async defer crossorigin="anonymous"                src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v22.0"></script>
+
     <!-- Seznam Retargeting -->
     <script src="https://c.seznam.cz/js/rc.js"></script>
     <script>
         var retargetingConf = { rtgId: 1479245 };
-        if (window.rc && window.rc.retargetingHit) {
-            window.rc.retargetingHit(retargetingConf);
-        }
+        (window.rc && window.rc.retargetingHit) && window.rc.retargetingHit(retargetingConf);
     </script>
 
     <!-- Google Ads -->
