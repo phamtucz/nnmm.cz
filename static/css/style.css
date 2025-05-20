@@ -9,7 +9,50 @@
 html {
     overflow-y: scroll;
 }
+/* Contact Images Container */
+.contact-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
 
+.contact-image-wrapper {
+  text-align: center;
+}
+
+.profile-image, .qr-code {
+  border: 2px solid #B40101;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image, .qr-code {
+    width: 120px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .contact-images-container {
+    flex-direction: column;
+    margin-bottom: 0;
+    min-width: 180px;
+  }
+}
 body {
     padding-top: 60px;
     font-family: Times New Roman, serif;
