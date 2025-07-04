@@ -13,9 +13,10 @@
     <!-- Favicons -->
     <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="img/png" sizes="32x32" href="static/img/favicon/32.png">
-    <link rel="icon" type="img/png" sizes="16x16" href="static/img/favicon/16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/16.png">
     <link rel="manifest" href="static/img/favicon/manifest.json">
+
     <!-- Titles -->
     <title>Prodej nemovitostí: Bez stresu, zisk na maximum!</title>
     <link rel="canonical" href="https://nnmm.cz/">
@@ -61,8 +62,9 @@
                         <img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka">
                     </a>
                     <a href="https://www.kwcz.cz" rel="noopener" target="_blank">
-<!-- Stylesheets                           <img class="logo green" src="static/img/kww.svg" style="float: right;" alt="KW Reality"> --> 
-                    <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality">     
+                        <!-- Stylesheets -->
+                        <!--<img class="logo green" src="static/img/kww.svg" style="float: right;" alt="KW Reality">-->
+                        <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality">     
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
@@ -313,16 +315,9 @@
                 <strong>Email:</strong> <a href="mailto:tu.pham@kwcz.cz">tu.pham@kwcz.cz</a></p></div>
                 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; justify-content: flex-start;">
                     <img src="static/img/1tu.jpg" alt="vietnamský makléř Pham Minh Tu" style="width: clamp(1.8cm, 30vw, 4cm); height: auto;">
-                    <img src="static/img/QRpmt.PNG" alt="QR kode Pham" style="width: clamp(1.8cm, 30vw, 4cm); height: auto;">
-                
+                    <img src="static/img/QRpmt.PNG" alt="QR kode Pham" style="width: clamp(1.8cm, 30vw, 4cm); height: auto;">              
             Registrovaný u ČNB jako poradce pro úvěry a pojištění<br>
 Zapsán v evidenci MPO pro činnost realitního zprostředkovatele
-            <a href="https://www.app.vectorcertifikace.cz/certifikovano-vectorem/poradce/50287/">
-  <img src="https://www.app.vectorcertifikace.cz/certifikovano-vectorem/poradce/50287/znamka.png"
-    alt="Certifikováno Vectorem"
-    width="150"
-    height="150" />
-</a>
 </div>
             <div class="contact-container" style="text-align: left;">
                 <strong>Adresa kanceláře:</strong> Libušská 319/126, 142 00 Praha 4-SAPA<br>
@@ -359,21 +354,31 @@ Zapsán v evidenci MPO pro činnost realitního zprostředkovatele
             </div>
         </div>
     </footer>
+<!-- Skripty -->
+<script src="static/libs/jquery/dist/jquery.min.js"></script>
+<script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="static/js/main.js"></script>
 
-    <!-- Skripty -->
-    <script src="static/libs/jquery/dist/jquery.min.js"></script>
-    <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/main.js"></script>
+<!-- Facebook SDK -->
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v22.0'
+    });
+  };
+</script>
 
-    <!-- Facebook SDK -->
-    <script async defer crossorigin="anonymous"                src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v22.0"></script>
+<!-- Seznam Retargeting -->
+<script src="https://c.seznam.cz/js/rc.js"></script>
+<script>
+    var retargetingConf = { rtgId: 1479245 };
+    if (window.rc && window.rc.retargetingHit) {
+        window.rc.retargetingHit(retargetingConf);
+    }
+</script>
 
-    <!-- Seznam Retargeting -->
-    <script src="https://c.seznam.cz/js/rc.js"></script>
-    <script>
-        var retargetingConf = { rtgId: 1479245 };
-        (window.rc && window.rc.retargetingHit) && window.rc.retargetingHit(retargetingConf);
-    </script>
 
     <!-- Google Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-730525492"></script>
