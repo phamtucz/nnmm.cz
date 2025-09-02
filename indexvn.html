@@ -125,9 +125,29 @@
         background-color: #f9f9f9;
     }
     
-    /* Footer */
-    footer {
-        background-color: #2c3e50;
+    /* ===== CSS MỚI CHO PHẦN LIÊN HỆ ===== */
+    #contact h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    #contact h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    #contact .contact-info p, 
+    #contact .contact-info a {
+        font-size: 1.15rem;
+        font-weight: 500;
+        line-height: 1.9;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    }
+    #contact .contact-info a {
+        text-decoration: underline;
+        transition: opacity 0.2s;
+    }
+    #contact .contact-info a:hover {
+        opacity: 0.8;
     }
   </style>
   
@@ -281,7 +301,7 @@
       <h2 class="section-title" style="color: white;">Liên hệ để được tư vấn</h2>
   
       <div class="row">
-        <div class="col-md-6" style="font-size: 1.1rem; line-height: 1.8;">
+        <div class="col-md-6 contact-info">
             <h3 style="color: white;">Ing. Phạm Minh Tứ</h3>
             <p><strong>Chuyên viên Môi giới Bất động sản & Tư vấn Tài chính</strong></p>
             <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
