@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <title>Prodej nemovitostí v Praze | Ing. Phạm Minh Tứ | Realitní makléř pro českou a vietnamskou klientelu</title>
-    <meta name="description" content="Jsem realitní makléř Ing. Phạm Minh Tứ, specialista na prodej nemovitostí v Praze pro českou i vietnamskou klientelu. Pomohu vám prodat dům, byt či pozemek rychle a za nejlepší cenu. Kontaktujte mě pro nezávaznou konzultaci!">
+    <meta name="description" content="Jsem realitní makléř Ing. Phạm Minh Tứ, specialista na prodej nemovitostí v Praze pro českou i vietnamskou klientelu. Poskytuji také komplexní finanční poradenství và podporu s hypotékou. Kontaktujte mě pro nezávaznou konzultaci!">
     
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="realitní makléř Praha, prodej nemovitostí Praha, vietnamský makléř, Ing. Phạm Minh Tứ, prodej bytu Praha, prodej domu Praha">
+    <meta name="keywords" content="realitní makléř Praha, finanční poradenství, prodej nemovitostí Praha, vietnamský makléř, Ing. Phạm Minh Tứ, prodej bytu Praha, prodej domu Praha, hypotéka">
     
     <link rel="canonical" href="https://nnmm.cz/">
 
@@ -39,38 +39,58 @@
     <style>
         body {
             font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 17px;
-            line-height: 1.7;
+            font-size: 18px;
+            line-height: 1.8;
             color: #333;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
         }
+        h2 { font-size: 2.4rem; }
+        h3 { font-size: 1.8rem; }
+
         .home_block_0 {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             min-height: 70vh;
-            padding: 40px 0;
-            /* Consider adding a background image here */
-            background-color: #f0f2f5; 
+            padding: 40px 20px;
+            /* Để chữ trắng nổi bật, cần một nền tối hơn hoặc hình ảnh nền */
+            background-color: #333; /* Đổi màu nền sang tối hơn để chữ trắng dễ nhìn */
+            color: #ffffff; /* Để các đoạn văn bản trong home_block_0 có màu trắng */
         }
+
+        /* CSS cho tiêu đề chính to và nổi bật nhất (MÀU TRẮNG) */
         h1.catchline {
             font-weight: 700;
-            line-height: 1.3;
+            line-height: 1.2;
             margin-bottom: 30px;
             text-align: center;
-            font-size: 2rem;
+            color: #ffffff; /* ĐỔI MÀU CHỮ THÀNH MÀU TRẮNG */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Đổ bóng đậm hơn cho chữ trắng */
+            letter-spacing: -1px;
+            font-size: 2.5rem; 
         }
-        @media (min-width: 768px) { h1.catchline { font-size: 3rem; } }
-        @media (min-width: 1200px) { h1.catchline { font-size: 3.5rem; } }
+        @media (min-width: 768px) { 
+            h1.catchline { font-size: 3.8rem; } 
+        }
+        @media (min-width: 1200px) { 
+            h1.catchline { font-size: 4.5rem; } 
+        }
 
-        .red-highlight {
-            color: #c4122f;
-            font-weight: 600;
+        /* Điều chỉnh màu cho đoạn văn bản phụ trong hero_text để nó cũng màu trắng */
+        .home_block_0 .hero_text p {
+            color: #e0e0e0 !important; /* Đảm bảo màu trắng hoặc sáng cho đoạn text này */
         }
+
+        .red-highlight { color: #c4122f; font-weight: 600; }
+        .section-padding { padding: 60px 20px; }
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .container-narrow { max-width: 900px; margin: 0 auto; }
+        .grid-2-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
     </style>
 </head>
 
@@ -81,25 +101,17 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a href="index.html">
-                        <img class="logo white" src="static/img/cz.jpg" alt="Česká vlajka">
-                    </a>
-                    <a href="indexvn.html">
-                        <img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka">
-                    </a>
-                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank">
-                        <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality">   
-                    </a>
+                    <a href="index.html"><img class="logo white" src="static/img/cz.jpg" alt="Česká vlajka"></a>
+                    <a href="indexvn.html"><img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka"></a>
+                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank"><img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#main">Služby</a></li>
                         <li><a href="#makler">Proč si vybrat mě</a></li>
+                        <li><a href="#tym">Tým a Finance</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
@@ -115,7 +127,7 @@
                     <br class="d-none d-md-block">
                     Jsem váš spolehlivý makléř pro vietnamskou i českou klientelu.
                 </h1>
-                <p style="font-size: 1.5rem; color: #555; max-width: 800px; margin: 0 auto; font-weight: 500;">
+                <p style="font-size: 1.5rem; max-width: 800px; margin: 0 auto; font-weight: 500;">
                     Pomohu vám <span class="red-highlight">prodat dům, byt nebo pozemek</span> bezpečně, rychle a za co nejlepší cenu.<br>
                     Domluvím se <span class="red-highlight">česky i vietnamsky</span> – působím v Praze i ve Středočeském kraji.
                 </p>
@@ -123,76 +135,82 @@
         </div>
     </div>
     
-    <section id="main">
-        <div class="home_block home_block_1" style="padding: 60px 20px; background-color: #ffffff;">
-            <div class="container">
-                <div style="text-align: left; max-width: 900px; margin: 0 auto;">
-                    <h2>Chcete prodat svou nemovitost rychle a za co nejlepší cenu?</h2>
-                    <p>Dejte svému majetku tu nejlepší šanci na úspěšný prodej – bezpečně, bez stresu a s maximálním výnosem. Jsme specialisté na českou i vietnamskou klientelu a díky znalosti obou jazyků i kultur propojíme světy a otevřeme dveře více zájemcům o vaši nemovitost.</p>
-                    <p><strong>📍 Adresa kanceláře:</strong> Obchodní centrum SAPA, Libušská 319/126, 142 00 Praha-Libuš – Písnice.</p>
+    <section id="main" class="section-padding" style="background-color: #ffffff;">
+        <div class="container container-narrow text-left">
+            <h2>Chcete prodat svou nemovitost rychle a za co nejlepší cenu?</h2>
+            <p>Dejte svému majetku tu nejlepší šanci na úspěšný prodej – bezpečně, bez stresu a s maximálním výnosem. Jsme specialisté na českou i vietnamskou klientelu a díky znalosti obou jazyků i kultur propojíme světy a otevřeme dveře více zájemcům o vaši nemovitost.</p>
+            
+            <h3>Jak vám pomůžeme s prodejem:</h3>
+            <ul>
+                <li>Stanovení optimální tržní ceny nemovitosti</li>
+                <li>Příprava profesionální marketingové kampaně a focení</li>
+                <li>Kompletní právní a administrativní zajištění</li>
+                <li>Aktivní jednání se zájemci a vyjednávání o nejlepší ceně</li>
+            </ul>
 
-                    <h3>Jak vám pomůžeme s prodejem:</h3>
-                    <ul>
-                        <li>Stanovení optimální tržní ceny nemovitosti</li>
-                        <li>Příprava profesionální marketingové kampaně a focení</li>
-                        <li>Kompletní právní a administrativní zajištění</li>
-                        <li>Aktivní jednání se zájemci a vyjednávání o nejlepší ceně</li>
-                    </ul>
-
-                    <h2 class="cerveny-nadpis" style="margin-top: 40px;">Aktuálně hledáme pro své klienty v Praze:</h2>
-                    <ul>
-                        <li>Rodinné domy a byty v Praze 4 (Libuš, Písnice), Praha 5, 9, 10 a okolí</li>
-                        <li>Pozemky vhodné k výstavbě skladů poblíž SAPA</li>
-                        <li>Byty vhodné pro studenty v blízkosti vysokých škol</li>
-                        <li>Obchodní prostory v přízemí panelových domů</li>
-                    </ul>
-                    <p><strong>Kontaktujte mě ještě dnes – váš úspěšný prodej začíná zde!</strong></p>
-                </div>
-            </div>
+            <h2 class="cerveny-nadpis" style="margin-top: 40px;">Aktuálně hledáme pro své klienty v Praze:</h2>
+            <ul>
+                <li>Rodinné domy a byty v Praze 4 (Libuš, Písnice), Praha 5, 9, 10 a okolí</li>
+                <li>Pozemky vhodné k výstavbě skladů poblíž SAPA</li>
+                <li>Byty vhodné pro studenty v blízkosti vysokých škol</li>
+            </ul>
+            <p><strong>Kontaktujte mě ještě dnes – váš úspěšný prodej začíná zde!</strong></p>
         </div>
     </section>
 
-    <section id="makler" class="home_block home_block_3" style="padding: 60px 20px; background: #f8f9fb;">
+    <section id="makler" class="section-padding" style="background: #f8f9fb;">
         <div class="container">
-            <h2 class="section-title text-center" style="font-size: 2.2rem; margin-bottom: 40px; color: #c4122f;">
-                Proč si vybrat vietnamského makléře při prodeji nemovitosti
+            <h2 class="section-title text-center" style="margin-bottom: 40px; color: #c4122f;">
+                Proč si vybrat vietnamského makléře
             </h2>
-            <div class="makler-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto;">
-                <article class="makler-benefit">
-                    <h3 style="color: #333;">📈 Vysoká poptávka</h3>
-                    <p>Vietnamská klientela má výrazný zájem o koupi nemovitostí, často s předem zajištěným financováním. Obchody probíhají na základě důvěry.</p>
-                </article>
-                <article class="makler-benefit">
-                    <h3 style="color: #333;">🌍 Hluboké kulturní porozumění</h3>
-                    <p>Znalost jazyka a mentality vietnamské komunity umožňuje hladkou a efektivní komunikaci bez nedorozumění.</p>
-                </article>
-                <article class="makler-benefit">
-                    <h3 style="color: #333;">🚀 Rychlý přístup k zájemcům</h3>
-                    <p>Díky přímému kontaktu s komunitou oslovíme více vážných a prověřených kupujících.</p>
-                </article>
-                <article class="makler-benefit">
-                    <h3 style="color: #333;">🤝 Důvěra a osobní doporučení</h3>
-                    <p>Mám silnou reputaci a kontakty v celé komunitě, což je základem pro úspěšný obchod.</p>
-                </article>
+            <div class="grid-2-col container-narrow">
+                <article><h3>📈 Vysoká poptávka</h3><p>Vietnamská klientela má výrazný zájem o koupi nemovitostí, často s předem zajištěným financováním.</p></article>
+                <article><h3>🌍 Kulturní porozumění</h3><p>Znalost jazyka a mentality vietnamské komunity umožňuje hladkou và efektivní komunikaci.</p></article>
+                <article><h3>🚀 Rychlý přístup k zájemcům</h3><p>Díky přímému kontaktu s komunitou oslovíme více vážných a prověřených kupujících.</p></article>
+                <article><h3>🤝 Důvěra a doporučení</h3><p>Mám silnou reputaci a kontakty v celé komunitě, což je základem pro úspěšný obchod.</p></article>
             </div>
         </div>
     </section>
 
-    <section id="kontakt" style="padding: 60px 20px; background-color: #ffffff;">
-        <div class="container text-center">
-            <h2>Kontaktní informace</h2>
-            <div class="contact-container" style="max-width: 600px; margin: 0 auto;">
-                <img src="static/img/1tu.jpg" alt="Ing. Minh Tu Pham, vietnamský realitní makléř v Praze" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #c4122f;">
-                <p><strong>Ing. Minh Tu Pham</strong></p>
-                <p>Specialista na reality pro vietnamskou a českou klientelu.</p>
-                <p><strong>Telefon:</strong> <a href="tel:+420778081986">+420 778 081 986</a> (WhatsApp, Viber)</p>
-                <p><strong>Email:</strong> <a href="mailto:tu.pham@kwcz.cz">tu.pham@kwcz.cz</a></p>
-                <p>Registrován u ČNB a MPO.</p>
+    <section id="tym" class="section-padding" style="background-color: #ffffff;">
+        <div class="container container-narrow text-left">
+            <h2>Síla Našeho Týmu a Finanční Zázemí</h2>
+            <p>Nejste sami. Za mnou stojí silný tým a komplexní služby, které zajišťují hladký průběh každého obchodu.</p>
+            
+            <h3>Síla rozsáhlého týmu Keller Williams</h3>
+            <ul>
+                <li>Tým 20 zkušených profesionálů připravených pomoci</li>
+                <li>Úzká spolupráce pro komplexní pokrytí a péči o každého klienta</li>
+                <li>Zvládáme všechny aspekty prodeje, pronájmu i koupě nemovitosti</li>
+            </ul>
+
+            <h3>Podpora při financování nákupu (Hypotéka)</h3>
+            <p>Rozumíme, že proces financování může být náročný. Proto poskytujeme kompletní podporu při zajištění hypotéky od renomovaných bank s optimálními podmínkami. Náš tým poradců vás provede celým procesem – od výběru produktu až po nejlepší úrokové sazby a platební podmínky.</p>
+
+            <h3>Komplexní finanční poradenství</h3>
+            <p>Nejsme pouze realitní makléři – jsme také finanční poradci. Díky propojení realitních a finančních služeb zajišťujeme hladší průběh celého procesu. Pomůžeme vám optimalizovat cash flow a vyřešit všechny finanční otázky spojené s nákupem či prodejem nemovitosti.</p>
+            <p style="font-size: 0.9em; color: #555;"><em>Investiční služby, zprostředkování pojištění, úvěrů a penzijního spoření jsou poskytovány na základě registrace vázaného zástupce Ing. Minh Tu Pham, IČO 66473721, pod BEplan finanční plánování s.r.o., IČO 05779944.</em></p>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section-padding" style="background: #f8f9fb;">
+        <div class="container text-center container-narrow">
+            <h2>Kontaktujte Mě</h2>
+            <img src="static/img/1tu.jpg" alt="Ing. Minh Tu Pham" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #c4122f;">
+            <div class="text-left">
+                <p><strong>Ing. Minh Tu Pham</strong><br>
+                Vedoucí infocentra Praha - Sapa: specialista na reality pro vietnamskou klientelu.</p>
+                <p><strong>Telefon:</strong> <a href="tel:+420778081986">+420 778 081 986</a> (WhatsApp, Viber)<br>
+                <strong>Email:</strong> <a href="mailto:tu.pham@kwcz.cz">tu.pham@kwcz.cz</a></p>
+                <p><strong>Adresa kanceláře:</strong> Libušská 319/126, 142 00 Praha 4-SAPA (5. patro, kancelář naproti Ivo).</p>
+                <p><strong>Doprava:</strong> Budova se nachází v blízkosti autobusové zastávky Sapa (linky 113, 197).</p>
+                <p><strong>Parkování:</strong> Doporučujeme parkovat v areálu Sapy před restaurací Dong Do nebo u budovy vedle autobusové zastávky.</p>
+                <p style="font-size: 0.9em; color: #555;"><em>Registrován u ČNB jako poradce pro úvěry, pojištění, investice a doplňkové penzijní spoření.<br>Zapsán v evidenci MPO pro činnost realitního zprostředkovatele.</em></p>
             </div>
         </div>
     </section>
 
-    <div class="home_block" style="padding: 60px 20px; background: #f8f9fb;">
+    <div class="section-padding" style="background-color: #ffffff;">
         <div class="container text-center">
             <h3>Facebooková stránka ve vietnamštině 🇻🇳</h3>
             <p>Sledujte naši fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> pro aktuální informace.</p>
@@ -211,19 +229,12 @@
     <script src="static/js/main.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js"></script>
     <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml            : true,
-                version          : 'v22.0'
-            });
-        };
+        window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v22.0' }); };
     </script>
     <script src="https://c.seznam.cz/js/rc.js"></script>
     <script>
         var retargetingConf = { rtgId: 1479245 };
-        if (window.rc && window.rc.retargetingHit) {
-            window.rc.retargetingHit(retargetingConf);
-        }
+        if (window.rc && window.rc.retargetingHit) { window.rc.retargetingHit(retargetingConf); }
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-730525492"></script>
     <script>
