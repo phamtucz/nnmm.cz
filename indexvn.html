@@ -8,7 +8,6 @@
   <meta name="keywords" content="bất động sản Séc, mua nhà Praha, vay mua nhà Séc, môi giới người Việt, hypotéka, đầu tư bđs, cho thuê nhà, cửa hàng Sapa">
   <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
   
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLVLF7XBS7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,19 +16,99 @@
     gtag('config', 'G-VLVLF7XBS7');
   </script>
   
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="images/favicons/manifest.json">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/16.png">
+  <link rel="manifest" href="static/img/favicon/manifest.json">
   
-  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/public.css">
   
-  <!-- Schema.org markup for Google -->
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+        background-color: #f8f9fa;
+    }
+    h1, h2, h3, h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #2c3e50;
+    }
+    .home_block {
+        padding: 60px 0;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    /* Hero Banner */
+    .hero_section {
+        background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+    }
+    .hero_section h1 { color: white; font-size: 2.8rem; font-weight: 700; }
+    .hero_section h2 { color: white; font-size: 1.8rem; font-weight: 400; opacity: 0.9; }
+    .hero_section h3 { color: white; font-size: 1.3rem; opacity: 0.8; }
+    
+    /* Card Style */
+    .card {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        height: 100%;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+        margin-top: 0;
+        color: #d71920; /* Red color from footer */
+    }
+    
+    /* CSS MỚI CHO PHẦN LIÊN HỆ */
+    #contact h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    #contact h3 {
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    #contact .contact-info p, 
+    #contact .contact-info a {
+        font-size: 1.15rem;
+        font-weight: 500;
+        line-height: 1.9;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    }
+    #contact .contact-info a {
+        text-decoration: underline;
+        transition: opacity 0.2s;
+    }
+    #contact .contact-info a:hover {
+        opacity: 0.8;
+    }
+  </style>
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,7 +135,6 @@
 </head>
 
 <body>
-  <!-- Header/Navigation -->
   <header>
     <nav class="navbar navbar-default navbar-fixed-top unscrolled">
       <div class="container">
@@ -67,318 +145,146 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html">
-            <img class="logo green" src="static/img/cz.jpg" alt="Cờ Cộng hòa Séc">
-          </a>
-          <a href="indexvn.html">
-            <img class="logo white" src="static/img/vn.jpg" alt="Cờ Việt Nam">
-          </a>
-          <a href="https://www.kwcz.cz">
-            <img class="logo green" src="static/img/kww.svg" style="float: right;" alt="Logo Keller Williams">
-            <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Logo Keller Williams">    
+          <a href="index.html"><img class="logo green" src="static/img/cz.jpg" alt="Cờ Cộng hòa Séc"></a>
+          <a href="indexvn.html"><img class="logo white" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
+          <a href="https://www.kwcz.cz" target="_blank" rel="noopener">
+             <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Logo Keller Williams"> 
           </a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#main">Ngôi Nhà May Mắn</a></li>
-            <li><a href="#makler">Chuyên viên người Việt</a></li>
-            <li><a href="#kontakt">Liên hệ</a></li>
+            <li><a href="#main">Giới thiệu</a></li>
+            <li><a href="#services">Dịch vụ</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Main Banner Section -->
-  <section id="main">
-    <div class="home_block home_block_0" style="display: flex; align-items: center; justify-content: center; text-align: center; min-height: 60vh; background-color: #f8f9fa;">
-  <div class="container">
-    <div class="hero_text">
-      <h1 class="catchline" style="font-size: 2rem; font-weight: bold; margin-bottom: 20px;">
-        Ing. Phạm Minh Tứ – Chuyên gia Bất động sản cho Người Việt tại Séc
-      </h1>
-      <h2 style="font-size: 1.6rem; font-weight: 500; margin-bottom: 15px;">
-        Tư vấn có tâm – đầu tư có tầm – đồng hành thịnh vượng!
-      </h2>
-      <h3 style="font-size: 1.4rem; color: #888;">
-        Keller Williams Metropolitan | Văn phòng tại SAPA, Praha
-      </h3>
+  <section class="hero_section text-center">
+    <div class="container">
+        <h1>Ing. Phạm Minh Tứ</h1>
+        <h2>Chuyên gia Bất động sản & Tài chính cho Người Việt tại Séc</h2>
+        <h3>Tư vấn có tâm – đầu tư có tầm – đồng hành thịnh vượng!</h3>
     </div>
-  </div>
-</div>
+  </section>
 
-    <!-- About Keller Williams -->
-    <div class="home_block home_block_1">
-      <div class="container">
+  <section id="main" class="home_block">
+    <div class="container">
+        <h2 class="section-title">Về Keller Williams Czech Republic</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p><strong>Chào mừng bạn đến với chi nhánh cho người Việt của Keller Williams (KW).</strong> Được thành lập từ năm 1983 bởi Gary Keller, KW hiện là <strong>đơn vị số 1 thế giới</strong> về nhượng quyền thương hiệu trong ngành môi giới và đào tạo bất động sản.</p>
+            <p>Với sự hiện diện tại 61 quốc gia, hơn 1.100 sàn giao dịch và tổng giao dịch hàng năm đạt 535 tỷ USD, KW không chỉ là một công ty BĐS truyền thống mà còn là một <strong>công ty công nghệ tiên phong</strong>.</p>
+            <p>Đội ngũ môi giới chuyên nghiệp của chúng tôi tại Séc sẽ đồng hành cùng bạn trong quá trình mua bán và tìm kiếm những cơ hội đầu tư tốt nhất.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="services" class="home_block">
+    <div class="container">
+        <h2 class="section-title">Dịch vụ Bất động sản & Tài chính</h2>
         <div class="row">
-          <div class="col-md-12">
-            <h2>Giới thiệu Keller Williams</h2>
-            <p><strong>Chào mừng bạn đến với chi nhánh cho người Việt của Keller Williams Czech Republic.</strong> Keller Williams (KW) được thành lập từ năm 1983 bởi Gary Keller - tác giả của cuốn sách <em>"Triệu Phú môi giới bất động sản"</em> và cũng là một trong những người có ảnh hưởng lớn nhất trong lĩnh vực bất động sản toàn cầu.</p>
-            
-            <p>Trải qua hơn 40 năm phát triển và hiện diện tại 61 quốc gia, KW hiện được đánh giá là <strong>đơn vị số 1 thế giới</strong> về nhượng quyền thương hiệu trong ngành môi giới và đào tạo bất động sản, với trường đại học hàng đầu chuyên đào tạo môi giới và đầu tư bất động sản.</p>
-            
-            <p>Keller Williams đã ghi nhận những con số ấn tượng: <strong>tổng số giao dịch hàng năm đạt 535 tỷ USD</strong>, với <strong>hơn 1,5 triệu thương vụ</strong> và <strong>hơn 1.100 sàn giao dịch bất động sản</strong> trên toàn cầu.</p>
-            
-            <p>Mặc dù là một công ty bất động sản truyền thống lâu năm, KW đã sớm chuyển mình thành một <strong>công ty công nghệ trong lĩnh vực BĐS</strong>. Công ty đã đầu tư mạnh mẽ vào phát triển nền tảng công nghệ hiện đại, phù hợp với xu thế toàn cầu.</p>
-            
-            <p><strong>Keller Williams Czech Republic</strong> là một thành viên của KW Worldwide, và được đánh giá là khu vực đang phát triển mạnh mẽ và đầy tiềm năng.</p>
-            
-            <p>Đội ngũ môi giới chuyên nghiệp của chúng tôi sẽ đồng hành cùng bạn trong quá trình mua bán bất động sản và tìm kiếm những cơ hội đầu tư tốt nhất.</p>
-            
-            <div class="text-center">
-              <a href="https://www.kwcz.cz/" class="btn btn-primary">Trụ sở chính tại Praha 1</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3>Bạn cần Bán hoặc Cho thuê?</h3>
+                    <p>Chúng tôi giúp bạn đạt được giá trị cao nhất cho tài sản của mình.</p>
+                    <ul class="service-list">
+                        <li><strong>Định giá chính xác:</strong> Dựa trên dữ liệu thị trường thực tế.</li>
+                        <li><strong>Tiếp thị đa kênh:</strong> Tiếp cận đúng khách hàng mục tiêu.</li>
+                        <li><strong>Tìm người thuê phù hợp:</strong> Sàng lọc và xác minh kỹ lưỡng.</li>
+                        <li><strong>Hỗ trợ toàn diện:</strong> Đồng hành từ A-Z trong mọi giao dịch.</li>
+                    </ul>
+                </div>
             </div>
-          </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <h3>Bạn muốn Mua hoặc Đầu tư?</h3>
+                    <p>Đồng hành cùng bạn trong từng bước để sở hữu ngôi nhà mơ ước.</p>
+                    <ol class="service-list">
+                        <li><strong>Chuẩn bị tài chính:</strong> Tư vấn vay hypotéka tối ưu.</li>
+                        <li><strong>Tìm nhà ưng ý:</strong> Kiểm tra pháp lý & kỹ thuật kỹ càng.</li>
+                        <li><strong>Đàm phán & Đặt cọc:</strong> Đảm bảo quyền lợi cho bạn.</li>
+                        <li><strong>Ký hợp đồng & Sang tên:</strong> Hoàn tất thủ tục nhanh chóng.</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                 <div class="card">
+                    <h3>Giải pháp Tài chính</h3>
+                    <p>Hỗ trợ người Việt tại Séc với các dịch vụ tài chính chuyên nghiệp.</p>
+                    <ul class="service-list">
+                        <li><strong>Vay mua nhà (Hypotéka):</strong> Tìm lãi suất và điều kiện tốt nhất.</li>
+                        <li><strong>Vay kinh doanh & tiêu dùng:</strong> Hỗ trợ vốn cho mọi nhu cầu.</li>
+                        <li><strong>Giải trình tài chính:</strong> Chuẩn bị hồ sơ với ngân hàng, sở thuế.</li>
+                        <li><strong>Chuyển/Nhận tiền:</strong> Tư vấn giải pháp hợp pháp từ Việt Nam.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-    <!-- Real Estate Services Section -->
-    <section id="makler">
-      <div class="home_block home_block_2">
-        <div class="container">
+  </section>
+  
+  <section class="home_block">
+      <div class="container">
+          <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
           <div class="row">
-            <div class="col-md-6">
-              <!-- Selling Services -->
-              <div class="service-card">
-                <h2 class="service-title">Bạn đang cần bán nhà?</h2>
-                <p class="service-subtitle">Đừng lo lắng, hãy để chúng tôi giúp bạn!</p>
-                
-                <h3>Dịch vụ của chúng tôi</h3>
-                <ul class="service-list">
-                  <li>
-                    <strong>Đánh giá chính xác giá trị căn nhà:</strong>
-                    <p>Đánh giá toàn diện dựa trên dữ liệu thị trường thực tế và xu hướng tương lai.</p>
-                  </li>
-                  <li>
-                    <strong>Chiến lược tiếp thị hiệu quả:</strong>
-                    <p>Tiếp cận lượng lớn khách hàng mục tiêu qua đa kênh.</p>
-                  </li>
-                  <li>
-                    <strong>Hỗ trợ toàn diện:</strong>
-                    <p>Đồng hành từ A-Z trong quá trình bán nhà.</p>
-                  </li>
-                </ul>
+              <div class="col-md-4 text-center">
+                  <div class="card">
+                      <h3>Chuyên gia Tài chính</h3>
+                      <p>Am hiểu sâu sắc về hệ thống ngân hàng Séc, giúp bạn chuẩn bị hồ sơ vay vốn với điều kiện tối ưu và tỷ lệ thành công cao nhất.</p>
+                  </div>
               </div>
-            </div>
-            
-            <div class="col-md-6">
-              <!-- Renting Services -->
-              <div class="service-card">
-                <h2 class="service-title">Bạn có nhà cho thuê?</h2>
-                <p class="service-subtitle">Tìm người thuê phù hợp với yêu cầu của bạn</p>
-                
-                <h3>Dịch vụ của chúng tôi</h3>
-                <ul class="service-list">
-                  <li>
-                    <strong>Tìm kiếm người thuê phù hợp:</strong>
-                    <p>Theo tiêu chí và yêu cầu của chủ nhà.</p>
-                  </li>
-                  <li>
-                    <strong>Xác minh người thuê:</strong>
-                    <p>Kiểm tra lịch sử thuê nhà, khả năng tài chính.</p>
-                  </li>
-                  <li>
-                    <strong>Hỗ trợ toàn diện:</strong>
-                    <p>Từ đăng tin đến ký kết hợp đồng.</p>
-                  </li>
-                </ul>
+              <div class="col-md-4 text-center">
+                  <div class="card">
+                      <h3>Thấu hiểu Người Việt</h3>
+                      <p>Làm việc với các chuyên gia ngân hàng thân thiết, hiểu rõ đặc thù tài chính và nhu cầu của cộng đồng người Việt tại Séc.</p>
+                  </div>
               </div>
-            </div>
+              <div class="col-md-4 text-center">
+                  <div class="card">
+                      <h3>Tư vấn Toàn diện 1-1</h3>
+                      <p>Cung cấp một lộ trình rõ ràng, đồng hành cùng bạn từ bước đầu chuẩn bị tài chính cho đến khi bạn chính thức nhận chìa khóa nhà.</p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-      
-      <!-- Buying Process Section -->
-      <div class="home_block home_block_3">
-        <div class="container">
-          <h2>Quy trình mua nhà tại Séc</h2>
-          <p>Chúng tôi đồng hành cùng bạn trong từng bước để sở hữu ngôi nhà mơ ước:</p>
-          
-          <div class="process-steps">
-            <div class="step">
-              <div class="step-number">1</div>
-              <h3>Chuẩn bị tài chính</h3>
-              <p>Trả hết hoặc chuẩn bị hồ sơ vay hypotéka</p>
-            </div>
-            
-            <div class="step">
-              <div class="step-number">2</div>
-              <h3>Tìm nhà ưng ý</h3>
-              <p>Xem xét kỹ các vấn đề pháp lý, kỹ thuật</p>
-            </div>
-            
-            <div class="step">
-              <div class="step-number">3</div>
-              <h3>Ký hợp đồng đặt cọc</h3>
-              <p>Có cam kết cho vay từ ngân hàng (nếu vay)</p>
-            </div>
-            
-            <div class="step">
-              <div class="step-number">4</div>
-              <h3>Ký hợp đồng mua bán</h3>
-              <p>Ký quỹ, thế chấp (nếu vay)</p>
-            </div>
-            
-            <div class="step">
-              <div class="step-number">5</div>
-              <h3>Sang tên tại Sở Nhà đất</h3>
-              <p>Hoàn tất sau 20 ngày nếu không có sai sót</p>
-            </div>
-          </div>
-          
-          <div class="important-notes">
-            <h3>Lưu ý quan trọng:</h3>
-            <ul>
-              <li>Thuế chuyển nhượng 0% theo Luật số 386/2020</li>
-              <li>Báo cáo thuế nhà đất trong vòng 3 tháng sau sang tên</li>
-              <li>Nhà HTX: Không thể vay hypotéka, cần tư vấn kỹ</li>
-              <li>Chứng minh nguồn tiền theo luật chống rửa tiền</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Financial Services Table -->
-      <div class="home_block home_block_3">
-        <div class="container">
-          <h2>Dịch vụ Tài chính Chuyên nghiệp</h2>
-          <p>Hỗ trợ người Việt tại Séc với các giải pháp tài chính tối ưu:</p>
-          
-          <div class="table-responsive">
-            <table class="financial-services">
-              <thead>
-                <tr>
-                  <th>Dịch vụ</th>
-                  <th>Chi tiết</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Vay mua nhà</strong></td>
-                  <td>Tư vấn và làm hồ sơ vay hypotéka với lãi suất tốt nhất</td>
-                </tr>
-                <tr>
-                  <td><strong>Vay kinh doanh</strong></td>
-                  <td>Hỗ trợ vốn cho mở rộng hoạt động kinh doanh</td>
-                </tr>
-                <tr>
-                  <td><strong>Vay tiêu dùng</strong></td>
-                  <td>Các khoản vay phục vụ nhu cầu cá nhân, gia đình</td>
-                </tr>
-                <tr>
-                  <td><strong>Giải trình tài chính</strong></td>
-                  <td>Hỗ trợ chuẩn bị hồ sơ với ngân hàng/cơ quan thuế</td>
-                </tr>
-                <tr>
-                  <td><strong>Nhận tiền từ nước ngoài</strong></td>
-                  <td>Tư vấn cách nhận tiền từ Việt Nam hợp pháp</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Financial Expertise Section -->
-      <div class="home_block home_block_4">
-        <div class="container">
-          <h2>Tại sao chọn chúng tôi?</h2>
-          
-          <div class="expertise-points">
-            <div class="point">
-              <h3>Chuyên gia Tài chính</h3>
-              <p>Hỗ trợ vay ngân hàng với điều kiện tối ưu nhất</p>
-            </div>
-            
-            <div class="point">
-              <h3>Hiểu người Việt</h3>
-              <p>Làm việc với tất cả ngân hàng tại Séc, có mối quan hệ tốt với các chuyên gia hiểu cộng đồng Việt</p>
-            </div>
-            
-            <div class="point">
-              <h3>Tư vấn Toàn diện</h3>
-              <p>Đồng hành từ khâu chuẩn bị tài chính đến khi nhận nhà</p>
-            </div>
-          </div>
-          
-          <div class="office-info">
-            <h3>Văn phòng tại SAPA</h3>
-            <p><strong>Địa chỉ:</strong> Libušská 319/126, 142 00 Praha 4-SAPA<br>
-            Tầng 5, Nhà 7 tầng, đối diện văn phòng Ivo</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contact Section -->
-<footer style="background-color: #d71920; color: white; padding: 50px 0; font-family: Arial, sans-serif;">
-  <div class="container" style="max-width: 1100px; margin: 0 auto; font-size: 1.5rem; line-height: 1.7;">
-    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 40px;">Liên hệ với chúng tôi</h2>
+  </section>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-      <!-- Sloupec 1: Obrázky + registrace -->
-      <div style="flex: 1 1 320px; max-width: 420px; text-align: center;">
-        <img src="static/img/1tu.jpg" alt="Chuyên viên Phạm Minh Tứ" style="width: 150px; border-radius: 10px; margin-bottom: 20px;">
-        <br>
-        <img src="static/img/QRpmt.PNG" alt="QR Code liên hệ" style="width: 150px; margin-bottom: 25px;">
-        <div style="text-align: left; padding: 0 10px;">
-          <p><strong>📌 Đăng ký tại Ngân hàng Quốc gia Séc (ČNB):</strong><br>
-            – Tư vấn úvěr, bảo hiểm và đầu tư
-          </p>
-          <p><strong>📌 Ghi danh tại Bộ Công Thương (MPO):</strong><br>
-            – Môi giới bất động sản
-          </p>
-        </div>
-      </div>
-
-      <!-- Sloupec 2: Kontakty + adresa -->
-      <div style="flex: 1 1 320px; max-width: 600px;">
-        <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Ing. Phạm Minh Tứ</h3>
-        <p style="margin-bottom: 20px;"><strong>Chuyên viên môi giới bất động sản</strong></p>
-
-        <div>
-          <p><strong>📞 Điện thoại:</strong> +420 778 081 986</p>
-          <p><strong>📱 WhatsApp/Viber:</strong> +420 778 081 986</p>
-          <p><strong>📧 Email:</strong> <a href="mailto:tu.pham@kwcz.cz" style="color: white; text-decoration: underline;">tu.pham@kwcz.cz</a></p>
-          <p><strong>🌐 Website:</strong> <a href="https://kwcz.cz/makleri/minh-tu-pham" target="_blank" style="color: white; text-decoration: underline;">kwcz.cz/makleri/minh-tu-pham</a></p>
-          <p><strong>📘 Fanpage:</strong> <a href="https://www.facebook.com/BDSphamtu" target="_blank" style="color: white; text-decoration: underline;">Ngôi nhà may mắn</a></p>
+  <footer id="contact" style="background-color: #d71920; color: white; padding: 60px 0;">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Liên hệ để được tư vấn</h2>
+  
+      <div class="row">
+        <div class="col-md-6 contact-info">
+            <h3 style="color: white;">Ing. Phạm Minh Tứ</h3>
+            <p><strong>Chuyên viên Môi giới Bất động sản & Tư vấn Tài chính</strong></p>
+            <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
+            <p><strong>📞 Điện thoại/WhatsApp:</strong> <a href="tel:+420778081986" style="color: white;">+420 778 081 986</a></p>
+            <p><strong>📧 Email:</strong> <a href="mailto:tu.pham@kwcz.cz" style="color: white;">tu.pham@kwcz.cz</a></p>
+            <p><strong>📘 Fanpage:</strong> <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener" style="color: white;">Ngôi nhà may mắn</a></p>
+            <p><strong>🌐 Website:</strong> <a href="https://kwcz.cz/makleri/minh-tu-pham" target="_blank" rel="noopener" style="color: white;">Thông tin tại Keller Williams</a></p>
+            <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
+            <p><strong>📍 Văn phòng:</strong> Libušská 319/126, 142 00 Praha 4 – SAPA (Tầng 5, đối diện văn phòng Ivo).</p>
         </div>
 
-        <div style="margin-top: 25px;">
-          <h4 style="font-size: 1.3rem; margin-bottom: 10px;">📍 Địa chỉ văn phòng</h4>
-          <p><strong>Libušská 319/126, 142 00 Praha 4 – SAPA</strong><br>
-            Tầng 5, Nhà 7 tầng, đối diện văn phòng Ivo.
-          </p>
-          <p><strong>🅿️ Đỗ xe:</strong> Trước quán Đông Đô hoặc bãi gần bến xe buýt.</p>
+        <div class="col-md-6 text-center">
+          <img src="static/img/1tu.jpg" alt="Chuyên viên Phạm Minh Tứ" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 3px solid white;">
+          <br>
+          <img src="static/img/QRpmt.PNG" alt="QR Code liên hệ" style="width: 180px; border-radius: 8px;">
         </div>
       </div>
     </div>
+  </footer>
+  
+  <div style="background-color: #2c3e50; color: #bdc3c7; text-align: center; padding: 15px 0; font-size: 0.9rem;">
+      &copy; 2025 Ing. Phạm Minh Tứ – Keller Williams Metropolitan | <a href="https://www.nnmm.cz" target="_blank" rel="noopener" style="color: white;">nnmm.cz</a>
   </div>
-</footer>
 
-      <!-- Dolní řádek: copyright + web -->
-<div style="
-  margin-top: 40px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 20px;
-  background-color: #d71920;
-  overflow-x: auto;
-  white-space: nowrap;
-  font-size: 1.05rem;
-  color: white;
-">
-  <div style="display: inline-block; margin-right: 30px;">
-    &copy; 2025 Ing. Phạm Minh Tứ – Keller Williams Metropolitan | Chuyên gia bất động sản cho người Việt tại Cộng hòa Séc
-  </div>
-  <div style="display: inline-block;">
-    <a href="https://www.nnmm.cz" target="_blank" style="color: white; text-decoration: underline;">nnmm.cz</a>
-  </div>
-</div>
-    </section>
-  <!-- Scripts -->
-  <script src="static/libs/jQuery/dist/jquery.min.js"></script>
+  <script src="static/libs/jquery/dist/jquery.min.js"></script>
   <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="static/js/script.js"></script>
   <script src="static/js/home.js"></script>
