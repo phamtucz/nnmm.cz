@@ -1,140 +1,194 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prodej nemovitosti cizincům</title>
-  <meta name="description" content="Vietnamská komunita v Česku postupně bohatne a začíná se pouštět do nákupů nemovitostí.">
-  <meta name="keywords" content="Minh Tu Pham, vietnamský makléř, vietnamci, prodej vietnamcům, výhodné ceny bytů, pro Vietnamce, pozemky">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLVLF7XBS7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-VLVLF7XBS7');
-  </script>
-  <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="static/css/style.css">
-  <link rel="stylesheet" href="static/css/public.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prodej nemovitosti cizincům | Atraktivní příležitost</title>
+    <meta name="description" content="Až třetina nemovitostí v Česku je prodána cizincům. Zjistěte, proč je vietnamská komunita klíčovým kupcem a jak jim efektivně nabídnout vaši nemovitost.">
+    <meta name="keywords" content="Minh Tu Pham, vietnamský makléř, prodej cizincům, prodej vietnamcům, nemovitosti Praha, investice do nemovitostí">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLVLF7XBS7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLVLF7XBS7');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .hero-section {
+            /* Đã thay đổi URL hình ảnh nền để phù hợp với chủ đề Praha hoặc bất động sản */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?prague-cityscape,real-estate') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero-section h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #e0e0e0;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body a {
+            text-decoration: none;
+        }
+        .card-body a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .navbar-brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-default navbar-fixed-top unscrolled" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.html">
-            <img class="logo white" src="static/img/cz.jpg" alt="Flag of Czech Republic">
-          </a>
-          <a href="indexvn.html">
-            <img class="logo green" src="static/img/vn.jpg" alt="Flag of Vietnam">
-          </a>
-          <a href="https://www.kwcz.cz">
-            <img class="logo green" src="static/img/kww.svg" style="float: right;" alt="Logo KW Reality">
-            <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="KW Reality">
-          </a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/img/cz.jpg" alt="Flag of Czech Republic">
+                    <img src="static/img/vn.jpg" alt="Flag of Vietnam">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#main">Dům Štěstí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#makler">Vietnamský makléř</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="mb-3">Přes 30 % nemovitostí kupují cizinci.</h1>
+                <h2 style="color:lawngreen;">Jste připraveni jim nabídnout tu svou za nejlepší cenu?</h2>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Jak oslovit vietnamské klienty?</h2>
+                        <p class="lead">Pokud chcete prodat svou nemovitost vietnamským klientům a neumíte vietnamsky, máte dvě hlavní možnosti. Můžete se buď pokusit naučit základy jazyka, nebo si najmout profesionálního makléře, který jazyk i trh dokonale zná a zajistí hladký a výhodný prodej.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Zajímavosti z realitního trhu</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Polovina kupujících cizinců jsou Slováci</h5>
+                                <p class="card-text">Druhou největší skupinou jsou Vietnamci s 35% podílem. Následují Rusové, Ukrajinci a Holanďané.</p>
+                                <a href="https://www.mesec.cz/aktuality/nemovitosti-na-tuzemskem-trhu-kupuji-i-cizinci/" target="_blank">Zdroj: Měšec.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Vietnamci preferují hotovost</h5>
+                                <p class="card-text">Prodejci si jsou vědomi, že vietnamská komunita často platí hotově a včas, což z nich dělá velmi žádané zákazníky.</p>
+                                <a href="https://www.lidovky.cz/domov/pouze-pro-vietnamce.A090803_000054_ln_noviny_sko" target="_blank">Zdroj: Lidovky.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Zájem o nemovitosti i v krizi</h5>
+                                <p class="card-text">I v době recese zájem Vietnamců o obchody a byty nepolevuje. Pro mnohé majitele se stali klíčovými kupci.</p>
+                                <a href="https://www.lidovky.cz/domov/vietnamci-zachranuji-cesky-trh-s-nemovitostmi.A090803_000006_ln_noviny_sko" target="_blank">Zdroj: Lidovky.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Investice a lepší život</h5>
+                                <p class="card-text">Cizinci vnímají české nemovitosti jako bezpečnou investici a šanci na lepší život díky stabilní ekonomické situaci.</p>
+                                <a href="https://www.idnes.cz/ekonomika/domaci/cizinci-nemovitosti-v-cesku-byty-rusove-italove.A180319_390088_ekonomika_div" target="_blank">Zdroj: iDNES.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Pracovitost komunity</h5>
+                                <p class="card-text">Průměrný Vietnamec v Česku pracuje o deset hodin týdně více než místní, což svědčí o jejich odhodlání a finanční síle.</p>
+                                <a href="https://www.lidovky.cz/byznys/cizinci-travi-v-praci-vic-hodin-nez-cesi.A120214_171118_firmy-trhy_apa" target="_blank">Zdroj: Lidovky.cz</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 bg-primary text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Spojte se s námi na Facebooku 🇻🇳</h5>
+                                <p class="card-text">Sledujte naši stránku ve vietnamštině pro aktuální nabídky a informace z trhu.</p>
+                                <a href="https://www.facebook.com/mmRealitySapaPraha" target="_blank" class="text-white stretched-link">facebook.com/mmRealitySapaPraha</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-1">nnmm © 2025</p>
+            <p class="mb-0 small">Jsem <strong>vietnamský realitní makléř</strong> působící v Praze a v blízkém okolí. Specializuji se na vietnamskou klientelu, ale přes 70 % mých klientů jsou Češi.</p>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html#main">Dům Štěstí</a></li>
-            <li><a href="index.html#makler">Vietnamský makléř</a></li>
-            <li><a href="index.html#kontakt">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <div class="home_block home_block_0">
-    <div class="container">
-      <div class="hero_text">
-        <h1 class="catchline">
-          <span>Přes 30% nemovitostí kupují cizinci. Umíte jim nabídnout tu svou?</span>
-        </h1>
-        <h2 class="catchline" style="color:lawngreen;">
-          <span>Cizinci jsou někdy ochotni koupit nemovitost za více peněz než Češi. Máte něco, co byste jim chtěli nabídnout?</span>
-        </h2>
-      </div>
-    </div>
-  </div>
-  
-  <div class="home_block home_block_1">
-    <div class="container">
-      <div style="text-align: justify;">
-        Pokud chcete prodat svou nemovitost <a href="vietnamci.html#zajem">vietnamským klientům</a> a neumíte vietnamsky, můžete využít některé z následujících možností:<br>
-        <ul>
-          <li>Zkuste se naučit <strong>základy vietnamštiny</strong>, abyste mohli komunikovat s potenciálními kupci. Můžete použít online kurzy, aplikace nebo knihy, které vás naučí základní slovní zásobu a gramatiku. Tím si získáte důvěru a respekt vašich klientů a zvýšíte šanci na úspěšný prodej.</li>
-          <li>Najděte si <strong>makléře</strong>, který mluví vietnamsky a zná místní trh.</li>
-        </ul>
-        <h2>Zajímavosti:</h2>
-        <ul>
-          <li>
-            <p>Cizinci si pořizují dvacet až třicet procent tuzemských nemovitostí. Vnímají je jako investici nebo šanci na lepší život. Česko je atraktivní lokalita se stabilní ekonomickou a politickou situací a zdejší nemovitosti jsou v porovnání s jinými státy západní Evropy pořád relativně levné. Zájem je především o byty v Praze a Brně.</p>
-            Zdroj: <a href="https://www.idnes.cz/ekonomika/domaci/cizinci-nemovitosti-v-cesku-byty-rusove-italove.A180319_390088_ekonomika_div">Až třetinu nemovitostí v Česku kupují cizinci</a>
-          </li>
-          <li>
-            <p>Nemovitosti na území České republiky nekupují pouze Češi, ale také cizinci. Celou polovinu cizinců, kteří kupují nemovitosti na tuzemském trhu, tvoří Slováci. Druhou největší skupinou jsou Vietnamci, tvoří 35% podíl. Pak následují Rusové, Ukrajinci a Holanďané. Jen výjimečně kupují nemovitosti na českém území lidé z Německa, Anglie, Jižní Koreje nebo Saúdské Arábie. Vyplývá to ze statistik realitního trhu.</p>
-            Zdroj: <a href="https://www.mesec.cz/aktuality/nemovitosti-na-tuzemskem-trhu-kupuji-i-cizinci/">Nemovitosti na tuzemském trhu kupují i cizinci, nejvíce Slováci a Vietnamci</a>
-          </li>
-          <li>
-            <p>Největší zájem o nemovitosti v Česku mají Slováci, Vietnamci a Rusové. Cizinci si dnes mohou kupovat či pronajímat byty a domy bez omezení. Od příštího roku navíc budou mít volný přístup i k zemědělské půdě.</p>
-            Zdroj: <a href="https://www.idnes.cz/zpravy/domaci/slovaci-kupuji-v-cesku-hlavne-garsonky-vietnamci-domy-na-predmesti.A101205_075203_domaci_jj">Slováci kupují v Česku hlavně garsonky, Vietnamci domy na předměstí</a>
-          </li>
-          <li>
-            <p>Kapsy plné hotovosti a neutuchající zájem o nákup nových prodejen navzdory krizi. To jsou hlavní důvody, proč jsou dnes Vietnamci stále vyhledávanějšími zájemci při prodeji komerčních nemovitostí. „Jako zákazníci jsou teď velmi žádaní. Neuplyne týden, abychom nedostali nabídku od nějaké realitní kanceláře nebo i soukromníka, často určenou výhradně pro Vietnamce. Prodejci jsou si dobře vědomi, že tito lidé nemají problém platit hotově a včas</p>
-            Zdroj: <a href="https://www.lidovky.cz/domov/pouze-pro-vietnamce.A090803_000054_ln_noviny_sko">Stále více realitních inzerátů je zaměřených jen na vietnamskou komunitu. Nemá totiž problémy s penězi</a>
-          </li>
-          <li>
-            <a href="https://www.lidovky.cz/byznys/cizinci-travi-v-praci-vic-hodin-nez-cesi.A120214_171118_firmy-trhy_apa">Vietnamci dělají průměrně o deset hodin víc než místní - 54 hodin</a>
-          </li>
-          <li>
-            <p>Nemovitostí v cizině, obvykle u moře nebo v dovolenkové destinaci, kupují Češi rok od roku víc, hlásí realitní kanceláře. Impulzem je podle nich růst cen v tuzemsku, ale i šance zhodnotit úspory. Mezi nejžádanější regiony patří Chorvatsko, Španělsko, Itálie i Řecko.</p>
-            Zdroj: <a href="https://www.novinky.cz/clanek/finance-zajem-cechu-o-nemovitosti-v-cizine-rychle-roste-chteji-investici-i-chatu-u-more-40406560?_zn=aWQlM0QyNzMxMjc3Mjc3ODk1MzMzNDc0JTdDdCUzRDE3MDU2MDk2OTAuMjQ5JTdDdGUlM0QxNzA1NjA5NzU4LjQ5MiU3Q2MlM0QyMzk3NUM0MjJBNUIxNTc2NDFCNTA5RDY1Q0FFRkFGQQ%3D%3D">Zájem Čechů o nemovitosti v cizině rychle roste</a>
-          </li>
-          <li>
-            <p>Zájem Vietnamců o prostory pro obchody, ale i o byty nepolevuje ani tváří v tvář recesi. A i české realitky si je chválí, na rozdíl od řady Čechů totiž platí včas. Vyrovnat se Vietnamci umí i s nepřízní bank, které jim nechtějí půjčovat. Zvláště v komerční sféře se tak podle odborníků objevuje nový trend silné vietnamské konkurence. A s tvrdým bojem o zákazníka mají mnohem více zkušeností než čeští podnikatelé.</p>
-            Zdroj: <a href="https://ct24.ceskatelevize.cz/clanek/ekonomika/vietnamci-se-vrhaji-na-nemovitosti-v-cesku-jako-vosy-na-bonbon-185655">Vietnamci se vrhají na nemovitosti v Česku jako vosy na bonbon</a>
-          </li>
-          <li>
-            <p>Zatímco realitní trh dnes skomírá a najít dostatečně movitého kupce je mnohem obtížnější než v minulosti, vietnamští obchodníci jsou stále při chuti a hlavně při penězích. Podle realitních kanceláří jde prakticky o jedinou skupinu, u které se krize vůbec neprojevila snížením zájmu o nákup nových obchodů či skladů. Problémy s úvěry se jich netýkají a prodávající jsou si velmi dobře vědomi, že právě Vietnamci jsou pro ně nejlepší zárukou bezproblémového a včasného splácení. Někdy proto dokonce jiné zájemce ani nehledají.</p>
-            Zdroj: <a href="https://www.lidovky.cz/domov/vietnamci-zachranuji-cesky-trh-s-nemovitostmi.A090803_000006_ln_noviny_sko">Jediným východiskem z nouze se pro mnohé majitele nemovitostí stali Vietnamci.</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <div class="home_block home_block_2">
-    <div class="container">
-      <h3>Facebooková stránka ve vietnamštině 🇻🇳</h3>
-      <div class="justify-container">
-        <p>Vytvořili jsme fanpage ve vietnamštině, abychom usnadnili přístup vietnamské komunitě k informacím.</p>
-        <p><a href="https://www.facebook.com/mmRealitySapaPraha" target="_blank">facebook.com/mmRealitySapaPraha</a></p>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="footer_content">
-      <a href="https://www.nnmm.cz">nnmm © 2025 | Keller Williams CZ</a>
-      <p class="text-left">
-        Jsem <strong>vietnamský realitní makléř</strong>. Specializuji se na vietnamskou klientelu, ale ve skutečnosti je 70 % mých klientů Čechů. Působím hlavně v Praze a Středních Čechách.
-      </p>
-    </div>
-  </footer>
-  
-  <!-- Skripty načítáme až na konci dokumentu pro lepší výkon -->
-  <script src="static/libs/jQuery/dist/jquery.min.js"></script>
-  <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="static/js/script.js"></script>
-  <script src="static/js/home.js"></script>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
