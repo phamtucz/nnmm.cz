@@ -1,292 +1,255 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Môi giới Bất động sản & Dịch vụ Tài chính cho Người Việt tại CH Séc | Minh Tứ Phạm</title>
-  <meta name="description" content="Chuyên gia môi giới bất động sản người Việt tại Séc - Hỗ trợ mua bán nhà, vay hypotéka, tư vấn đầu tư BĐS. Văn phòng tại SAPA, Praha.">
-  <meta name="keywords" content="bất động sản Séc, mua nhà Praha, vay mua nhà Séc, môi giới người Việt, hypotéka, đầu tư bđs, cho thuê nhà, cửa hàng Sapa">
-  <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLVLF7XBS7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VLVLF7XBS7');
-  </script>
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/16.png">
-  <link rel="manifest" href="static/img/favicon/manifest.json">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="static/css/style.css">
-  <link rel="stylesheet" href="static/css/public.css">
-  
-  <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-        line-height: 1.7;
-        color: #333;
-        background-color: #f8f9fa;
-    }
-    h1, h2, h3, h4 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        color: #2c3e50;
-    }
-    .home_block {
-        padding: 60px 0;
-    }
-    .section-title {
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 2.5rem;
-        font-weight: 700;
-    }
-
-    /* Hero Banner */
-    .hero_section {
-        background: linear-gradient(rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 0.6)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070') no-repeat center center;
-        background-size: cover;
-        color: white;
-        padding: 100px 0;
-    }
-    .hero_section h1 { color: white; font-size: 2.8rem; font-weight: 700; }
-    .hero_section h2 { color: white; font-size: 1.8rem; font-weight: 400; opacity: 0.9; }
-    .hero_section h3 { color: white; font-size: 1.3rem; opacity: 0.8; }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    /* Card Style */
-    .card {
-        background: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 30px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        height: 100%;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    }
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-        margin-top: 0;
-        color: #d71920; /* Red color from footer */
-    }
+    <title>Mua Bán Nhà Đất tại Praha | Kỹ sư Phạm Minh Tứ | Môi giới Bất động sản Việt - Séc</title>
+    <meta name="description" content="Tôi là kỹ sư Phạm Minh Tứ, chuyên gia môi giới bất động sản tại Praha cho khách hàng người Việt và người Séc. Tôi sẽ giúp bạn bán nhà, căn hộ hoặc đất đai nhanh chóng với giá tốt nhất. Liên hệ để được tư vấn miễn phí!">
     
-    /* CSS MỚI CHO PHẦN LIÊN HỆ */
-    #contact h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    }
-    #contact h3 {
-        font-size: 1.7rem;
-        font-weight: 700;
-    }
-    #contact .contact-info p, 
-    #contact .contact-info a {
-        font-size: 1.15rem;
-        font-weight: 500;
-        line-height: 1.9;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
-    }
-    #contact .contact-info a {
-        text-decoration: underline;
-        transition: opacity 0.2s;
-    }
-    #contact .contact-info a:hover {
-        opacity: 0.8;
-    }
-  </style>
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Ing. Phạm Minh Tứ",
-    "image": "static/img/1tu.jpg",
-    "telephone": "+420 778 081 986",
-    "email": "tu.pham@kwcz.cz",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Libušská 319/126",
-      "addressLocality": "Praha",
-      "addressRegion": "Praha 4",
-      "postalCode": "142 00",
-      "addressCountry": "CZ"
-    },
-    "url": "https://kwcz.cz/makleri/minh-tu-pham",
-    "memberOf": {
-      "@type": "RealEstateBusiness",
-      "name": "Keller Williams Metropolitan"
-    }
-  }
-  </script>
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="môi giới bất động sản Praha, bán nhà đất Praha, môi giới người Việt, Phạm Minh Tứ, bán căn hộ Praha, bán nhà Praha, vay thế chấp">
+    
+    <link rel="canonical" href="https://nnmm.cz/indexvn.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/16.png">
+    <link rel="manifest" href="static/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#555555">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLVLF7XBS7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VLVLF7XBS7');
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/public.css">
+    
+    <style>
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        h2 { font-size: 2.4rem; }
+        h3 { font-size: 1.8rem; }
+        .home_block_0 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 70vh;
+            padding: 40px 20px;
+            background-color: #333;
+            color: #ffffff;
+        }
+        h1.catchline {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            letter-spacing: -1px;
+            font-size: 2.5rem; 
+        }
+        @media (min-width: 768px) { 
+            h1.catchline { font-size: 3.8rem; } 
+        }
+        @media (min-width: 1200px) { 
+            h1.catchline { font-size: 4.5rem; } 
+        }
+        .home_block_0 .hero_text p { color: #e0e0e0 !important; }
+        .red-highlight { color: #c4122f; font-weight: 600; }
+        .section-padding { padding: 60px 20px; }
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .container-narrow { max-width: 900px; margin: 0 auto; }
+        .grid-2-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-default navbar-fixed-top unscrolled">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.html"><img class="logo green" src="static/img/cz.jpg" alt="Cờ Cộng hòa Séc"></a>
-          <a href="indexvn.html"><img class="logo white" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
-          <a href="https://www.kwcz.cz" target="_blank" rel="noopener">
-             <img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Logo Keller Williams"> 
-          </a>
-        </div>
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#main">Giới thiệu</a></li>
-            <li><a href="#services">Dịch vụ</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section class="hero_section text-center">
-    <div class="container">
-        <h1>Ing. Phạm Minh Tứ</h1>
-        <h2>Chuyên gia Bất động sản & Tài chính cho Người Việt tại Séc</h2>
-        <h3>Tư vấn có tâm – đầu tư có tầm – đồng hành thịnh vượng!</h3>
-    </div>
-  </section>
-
-  <section id="main" class="home_block">
-    <div class="container">
-        <h2 class="section-title">Về Keller Williams Czech Republic</h2>
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <p><strong>Chào mừng bạn đến với chi nhánh cho người Việt của Keller Williams (KW).</strong> Được thành lập từ năm 1983 bởi Gary Keller, KW hiện là <strong>đơn vị số 1 thế giới</strong> về nhượng quyền thương hiệu trong ngành môi giới và đào tạo bất động sản.</p>
-            <p>Với sự hiện diện tại 61 quốc gia, hơn 1.100 sàn giao dịch và tổng giao dịch hàng năm đạt 535 tỷ USD, KW không chỉ là một công ty BĐS truyền thống mà còn là một <strong>công ty công nghệ tiên phong</strong>.</p>
-            <p>Đội ngũ môi giới chuyên nghiệp của chúng tôi tại Séc sẽ đồng hành cùng bạn trong quá trình mua bán và tìm kiếm những cơ hội đầu tư tốt nhất.</p>
-        </div>
-    </div>
-  </section>
-
-  <section id="services" class="home_block">
-    <div class="container">
-        <h2 class="section-title">Dịch vụ Bất động sản & Tài chính</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <h3>Bạn cần Bán hoặc Cho thuê?</h3>
-                    <p>Chúng tôi giúp bạn đạt được giá trị cao nhất cho tài sản của mình.</p>
-                    <ul class="service-list">
-                        <li><strong>Định giá chính xác:</strong> Dựa trên dữ liệu thị trường thực tế.</li>
-                        <li><strong>Tiếp thị đa kênh:</strong> Tiếp cận đúng khách hàng mục tiêu.</li>
-                        <li><strong>Tìm người thuê phù hợp:</strong> Sàng lọc và xác minh kỹ lưỡng.</li>
-                        <li><strong>Hỗ trợ toàn diện:</strong> Đồng hành từ A-Z trong mọi giao dịch.</li>
+    <div id="fb-root"></div>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top unscrolled">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img class="logo white" src="static/img/cz.jpg" alt="Cờ Séc"></a>
+                    <a href="indexvn.html"><img class="logo green" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
+                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank"><img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#main">Dịch Vụ</a></li>
+                        <li><a href="#makler">Vì sao chọn tôi</a></li>
+                        <li><a href="#tym">Đội ngũ & Tài chính</a></li>
+                        <li><a href="#kontakt">Liên Hệ</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="col-md-4">
-                <div class="card">
-                    <h3>Bạn muốn Mua hoặc Đầu tư?</h3>
-                    <p>Đồng hành cùng bạn trong từng bước để sở hữu ngôi nhà mơ ước.</p>
-                    <ol class="service-list">
-                        <li><strong>Chuẩn bị tài chính:</strong> Tư vấn vay hypotéka tối ưu.</li>
-                        <li><strong>Tìm nhà ưng ý:</strong> Kiểm tra pháp lý & kỹ thuật kỹ càng.</li>
-                        <li><strong>Đàm phán & Đặt cọc:</strong> Đảm bảo quyền lợi cho bạn.</li>
-                        <li><strong>Ký hợp đồng & Sang tên:</strong> Hoàn tất thủ tục nhanh chóng.</li>
-                    </ol>
-                </div>
-            </div>
-            
-            <div class="col-md-4">
-                 <div class="card">
-                    <h3>Giải pháp Tài chính</h3>
-                    <p>Hỗ trợ người Việt tại Séc với các dịch vụ tài chính chuyên nghiệp.</p>
-                    <ul class="service-list">
-                        <li><strong>Vay mua nhà (Hypotéka):</strong> Tìm lãi suất và điều kiện tốt nhất.</li>
-                        <li><strong>Vay kinh doanh & tiêu dùng:</strong> Hỗ trợ vốn cho mọi nhu cầu.</li>
-                        <li><strong>Giải trình tài chính:</strong> Chuẩn bị hồ sơ với ngân hàng, sở thuế.</li>
-                        <li><strong>Chuyển/Nhận tiền:</strong> Tư vấn giải pháp hợp pháp từ Việt Nam.</li>
-                    </ul>
-                </div>
+        </nav>
+    </header>
+
+    <div class="home_block home_block_0">
+        <div class="container">
+            <div class="hero_text">
+                <h1 class="catchline">
+                    Cần bán nhà đất tại Praha nhanh chóng và được giá?
+                    <br class="d-none d-md-block">
+                    Tôi là nhà môi giới tin cậy cho cả khách hàng Việt và Séc.
+                </h1>
+                <h3 class="catchline">
+                    Tôi sẽ giúp bạn <span class="red-highlight">bán nhà, căn hộ hoặc đất đai</span> một cách an toàn, nhanh chóng và với giá tốt nhất.<br>
+                    Sử dụng thành thạo <span class="red-highlight">cả tiếng Việt và tiếng Séc</span> – hoạt động tại Praha và các vùng lân cận.
+                </h3>
             </div>
         </div>
     </div>
-  </section>
-  
-  <section class="home_block">
-      <div class="container">
-          <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
-          <div class="row">
-              <div class="col-md-4 text-center">
-                  <div class="card">
-                      <h3>Chuyên gia Tài chính</h3>
-                      <p>Am hiểu sâu sắc về hệ thống ngân hàng Séc, giúp bạn chuẩn bị hồ sơ vay vốn với điều kiện tối ưu và tỷ lệ thành công cao nhất.</p>
-                  </div>
-              </div>
-              <div class="col-md-4 text-center">
-                  <div class="card">
-                      <h3>Thấu hiểu Người Việt</h3>
-                      <p>Làm việc với các chuyên gia ngân hàng thân thiết, hiểu rõ đặc thù tài chính và nhu cầu của cộng đồng người Việt tại Séc.</p>
-                  </div>
-              </div>
-              <div class="col-md-4 text-center">
-                  <div class="card">
-                      <h3>Tư vấn Toàn diện 1-1</h3>
-                      <p>Cung cấp một lộ trình rõ ràng, đồng hành cùng bạn từ bước đầu chuẩn bị tài chính cho đến khi bạn chính thức nhận chìa khóa nhà.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+    
+    <section id="main" class="section-padding" style="background-color: #ffffff;">
+        <div class="container container-narrow text-left">
+            <h2>Bạn muốn bán bất động sản tại Praha nhanh chóng và được giá tốt nhất?</h2>
+            <p>Hãy trao cho tài sản của bạn cơ hội tốt nhất để bán thành công – một cách an toàn, không căng thẳng và với lợi nhuận tối đa. Chúng tôi là chuyên gia cho cả khách hàng người Việt và người Séc, nhờ vào việc am hiểu cả hai ngôn ngữ và văn hóa, chúng tôi sẽ kết nối các thế giới và mở ra cánh cửa cho nhiều người mua tiềm năng hơn cho bất động sản của bạn.</p>
+            
+            <h3>Chúng tôi giúp bạn bán nhà như thế nào:</h3>
+            <ul>
+                <li>Định giá thị trường tối ưu cho bất động sản</li>
+                <li>Chuẩn bị chiến dịch marketing và chụp ảnh chuyên nghiệp</li>
+                <li>Đảm bảo đầy đủ các thủ tục pháp lý và hành chính</li>
+                <li>Tích cực đàm phán với người mua để có được mức giá tốt nhất</li>
+            </ul>
 
-  <footer id="contact" style="background-color: #bdc3c7; color: white; padding: 60px 0;">
-    <div class="container">
-      <h2 class="section-title" style="color: white;">Liên hệ để được tư vấn</h2>
-  
-      <div class="row">
-        <div class="col-md-6 contact-info">
-            <h3 style="color: white;">Ing. Phạm Minh Tứ</h3>
-            <p><strong>Chuyên viên Môi giới Bất động sản & Tư vấn Tài chính</strong></p>
-            <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
-            <p><strong>📞 Điện thoại/WhatsApp:</strong> <a href="tel:+420778081986" style="color: white;">+420 778 081 986</a></p>
-            <p><strong>📧 Email:</strong> <a href="mailto:tu.pham@kwcz.cz" style="color: white;">tu.pham@kwcz.cz</a></p>
-            <p><strong>📘 Fanpage:</strong> <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener" style="color: white;">Ngôi nhà may mắn</a></p>
-            <p><strong>🌐 Website:</strong> <a href="https://kwcz.cz/makleri/minh-tu-pham" target="_blank" rel="noopener" style="color: white;">Thông tin tại Keller Williams</a></p>
-            <hr style="border-top: 1px solid rgba(255,255,255,0.2);">
-            <p><strong>📍 Văn phòng:</strong> Libušská 319/126, 142 00 Praha 4 – SAPA (Tầng 5, đối diện văn phòng Ivo).</p>
+            <h2 class="cerveny-nadpis" style="margin-top: 40px;">Hiện đang tìm kiếm cho khách hàng tại Praha:</h2>
+            <ul>
+                <li>Nhà và căn hộ tại Praha 4 (Libuš, Písnice), Praha 5, 9, 10 và các khu vực lân cận</li>
+                <li>Đất đai phù hợp để xây dựng kho bãi gần TTTM SAPA</li>
+                <li>Căn hộ phù hợp cho sinh viên gần các trường đại học</li>
+            </ul>
+            <p><strong>Hãy liên hệ ngay hôm nay – việc bán nhà thành công của bạn bắt đầu từ đây!</strong></p>
         </div>
+    </section>
 
-        <div class="col-md-6 text-center">
-          <img src="static/img/1tu.jpg" alt="Chuyên viên Phạm Minh Tứ" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 3px solid white;">
-          <br>
-          <img src="static/img/QRpmt.PNG" alt="QR Code liên hệ" style="width: 180px; border-radius: 8px;">
+    <section id="makler" class="section-padding" style="background: #f8f9fb;">
+        <div class="container">
+            <h2 class="section-title text-center" style="margin-bottom: 40px; color: #c4122f;">
+                Vì sao nên chọn một nhà môi giới người Việt
+            </h2>
+            <div class="grid-2-col container-narrow">
+                <article><h3>📈 Nhu cầu cao</h3><p>Khách hàng người Việt có nhu cầu mua bất động sản rất lớn, và thường đã có sẵn tài chính. Các giao dịch diễn ra dựa trên sự tin tưởng.</p></article>
+                <article><h3>🌍 Thấu hiểu văn hóa</h3><p>Việc am hiểu ngôn ngữ và tâm lý của cộng đồng người Việt giúp cho việc giao tiếp được suôn sẻ và hiệu quả.</p></article>
+                <article><h3>🚀 Tiếp cận nhanh chóng</h3><p>Nhờ quan hệ trực tiếp với cộng đồng, chúng tôi có thể tiếp cận được nhiều người mua nghiêm túc và đã được xác minh.</p></article>
+                <article><h3>🤝 Tin cậy và được giới thiệu</h3><p>Tôi có uy tín và các mối quan hệ vững chắc trong cộng đồng, đây là nền tảng cho một giao dịch thành công.</p></article>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <section id="tym" class="section-padding" style="background-color: #ffffff;">
+        <div class="container container-narrow text-left">
+            <h2>Sức mạnh Đội ngũ & Nền tảng Tài chính</h2>
+            <p>Bạn không hề đơn độc. Đứng sau tôi là một đội ngũ mạnh mẽ và các dịch vụ toàn diện, đảm bảo mọi giao dịch đều diễn ra suôn sẻ.</p>
+            
+            <h3>Sức mạnh từ đội ngũ Keller Williams</h3>
+            <ul>
+                <li>Đội ngũ 20 chuyên gia giàu kinh nghiệm sẵn sàng trợ giúp</li>
+                <li>Hợp tác chặt chẽ để chăm sóc toàn diện cho mọi khách hàng</li>
+                <li>Chúng tôi xử lý mọi khía cạnh của việc bán, cho thuê và mua bất động sản</li>
+            </ul>
+
+            <h3>Hỗ trợ Vay vốn Mua nhà (Hypotéka)</h3>
+            <p>Chúng tôi hiểu rằng quá trình vay vốn có thể phức tạp. Vì vậy, chúng tôi cung cấp hỗ trợ toàn diện để đảm bảo khoản vay thế chấp từ các ngân hàng uy tín với điều kiện tối ưu. Đội ngũ tư vấn của chúng tôi sẽ hướng dẫn bạn toàn bộ quy trình – từ việc chọn sản phẩm đến việc có được lãi suất và điều kiện thanh toán tốt nhất.</p>
+
+            <h3>Tư vấn Tài chính Toàn diện</h3>
+            <p>Chúng tôi không chỉ là nhà môi giới bất động sản – chúng tôi còn là nhà tư vấn tài chính. Nhờ sự kết hợp giữa dịch vụ bất động sản và tài chính, chúng tôi đảm bảo toàn bộ quá trình diễn ra suôn sẻ hơn. Chúng tôi sẽ giúp bạn tối ưu hóa dòng tiền và giải quyết mọi vấn đề tài chính liên quan đến việc mua hoặc bán bất động sản.</p>
+            
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                <a href="kalkulacka.html" class="btn btn-primary" style="background-color: #c4122f; border-color: #c4122f; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-transform: uppercase; border-radius: 5px;">
+                    Công Cụ Tính Toán Online
+                </a>
+            </div>
+            
+            <p style="font-size: 0.9em; color: #555;"><em>Các dịch vụ đầu tư, môi giới bảo hiểm, tín dụng tiêu dùng và tiết kiệm hưu trí bổ sung được cung cấp trên cơ sở đăng ký đại lý liên kết Ing. Minh Tu Pham, IČO 66473721, thuộc nhà môi giới độc lập BEplan finanční plánování s.r.o., IČO 05779944.</em></p>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section-padding" style="background:#f8f9fb;">
+        <div class="container container-narrow contact-card text-left">
+            <h1 class="text-center mb-3">Liên hệ – Bất động sản & Tài chính</h1>
+            <p class="intro" style="text-align:center; max-width:700px; margin:0 auto 30px;">
+                Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính. Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
+            </p>
+
+            <h2 class="mb-3">Thông tin liên hệ</h2>
+            <p class="contact-item">
+                <i class="fas fa-phone"></i>
+                <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <strong>Email Bất động sản:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <strong>Email Tài chính:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-globe"></i>
+                <strong>Web:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
+            </p>
+        </div>
+    </section>
+
+    <div class="section-padding" style="background-color: #ffffff;">
+        <div class="container text-center">
+            <h3>Trang Facebook bằng tiếng Việt 🇻🇳</h3>
+            <p>Theo dõi fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> để cập nhật các thông tin mới nhất.</p>
+            <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
+        </div>
     </div>
-  </footer>
-  
-  <div style="background-color: #2c3e50; color: #bdc3c7; text-align: center; padding: 15px 0; font-size: 0.9rem;">
-      &copy; 2025 Ing. Phạm Minh Tứ – Keller Williams Metropolitan | <a href="https://www.nnmm.cz" target="_blank" rel="noopener" style="color: white;">nnmm.cz</a>
-  </div>
 
-  <script src="static/libs/jquery/dist/jquery.min.js"></script>
-  <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="static/js/script.js"></script>
-  <script src="static/js/home.js"></script>
+    <footer>
+        <div class="container">
+            <p>Tôi là nhà môi giới bất động sản người Việt và rất vui khi có thể giúp đỡ mọi người tại Praha và các vùng lân cận trong việc bán | mua ngôi nhà của mình.</p>
+        </div>
+    </footer>
+
+    <script src="static/libs/jquery/dist/jquery.min.js"></script>
+    <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js"></script>
+    <script>
+        window.fbAsyncInit = function() { FB.init({ xfbml: true, version: 'v22.0' }); };
+    </script>
+    <script src="https://c.seznam.cz/js/rc.js"></script>
+    <script>
+        var retargetingConf = { rtgId: 1479245 };
+        if (window.rc && window.rc.retargetingHit) { window.rc.retargetingHit(retargetingConf); }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-730525492"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-730525492');
+    </script>
 </body>
 </html>
