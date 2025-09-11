@@ -12,7 +12,7 @@
     <meta name="keywords" content="realitní makléř Praha, finanční poradenství, prodej nemovitostí Praha, vietnamský makléř, Ing. Phạm Minh Tứ, prodej bytu Praha, prodej domu Praha, hypotéka">
     
     <link rel="canonical" href="https://nnmm.cz/">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
@@ -193,17 +193,61 @@
         </div>
     </section>
 
-    <section id="kontakt" class="section-padding" 
-    <h2 data-lang="cz" style="font-size: 1.4em; font-weight: 600; margin-top: 10px;">Kontakt</h2>
-    <h2 data-lang="vn" style="font-size: 1.4em; font-weight: 600; margin-top: 10px;">Liên hệ</h2>
-    <p>
-        <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a> |
-        <strong>Email Reality:</strong> <a href="mailto:tu.pham@kwcz.cz">tu.pham@kwcz.cz</a> |
-        <strong>Email Finance:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a> |
-        <strong>Web:</strong> <a href="https-www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
+<section id="kontakt" class="section-padding" style="background:#f8f9fb;">
+  <div class="container container-narrow contact-card text-left">
+    
+    <!-- Nút chuyển đổi ngôn ngữ -->
+    <div class="lang-toggle text-center mb-4">
+      <button onclick="setLang('cz')">🇨🇿 Čeština</button>
+      <button onclick="setLang('vn')">🇻🇳 Tiếng Việt</button>
+    </div>
+
+    <!-- Tiêu đề chính (SEO H1) -->
+    <h1 data-lang="cz" class="text-center mb-3">Kontakt – Reality & Finance</h1>
+    <h1 data-lang="vn" class="text-center mb-3" style="display:none;">Liên hệ – Bất động sản & Tài chính</h1>
+
+    <!-- Mô tả ngắn -->
+    <p class="intro" data-lang="cz" style="text-align:center; max-width:700px; margin:0 auto 30px;">
+      Spojte se se mnou pro profesionální služby v oblasti realit a financí.  
+      Poskytuji poradenství v nákupu/prodeji nemovitostí a řešení hypoték.
     </p>
+    <p class="intro" data-lang="vn" style="display:none; text-align:center; max-width:700px; margin:0 auto 30px;">
+      Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính.  
+      Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
+    </p>
+
+    <!-- Tiêu đề phụ -->
+    <h2 data-lang="cz" class="mb-3">Kontakt</h2>
+    <h2 data-lang="vn" class="mb-3" style="display:none;">Liên hệ</h2>
+
+    <!-- Nội dung liên hệ -->
+    <p class="contact-item">
+      <i class="fas fa-phone"></i>
+      <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
+    </p>
+    <p class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <strong>Email Reality:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
+    </p>
+    <p class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <strong>Email Finance:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
+    </p>
+    <p class="contact-item">
+      <i class="fas fa-globe"></i>
+      <strong>Web:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
+    </p>
+    
+  </div>
 </section>
-             
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
+      });
+    }
+  </script>
 
     <div class="section-padding" style="background-color: #ffffff;">
         <div class="container text-center">

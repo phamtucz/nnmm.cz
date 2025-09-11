@@ -12,7 +12,7 @@
     <meta name="keywords" content="realitní makléř Praha, finanční poradenství, prodej nemovitostí Praha, vietnamský makléř, Ing. Phạm Minh Tứ, prodej bytu Praha, prodej domu Praha, hypotéka">
     
     <link rel="canonical" href="https://nnmm.cz/">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/32.png">
@@ -57,17 +57,17 @@
             text-align: center;
             min-height: 70vh;
             padding: 40px 20px;
-            background-color: #f0f2f5; 
+            background-color: #333;
+            color: #ffffff;
         }
 
-        /* CSS cho tiêu đề chính to và nổi bật nhất */
         h1.catchline {
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 30px;
             text-align: center;
-            color: #1a1a1a;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
             letter-spacing: -1px;
             font-size: 2.5rem; 
         }
@@ -76,6 +76,10 @@
         }
         @media (min-width: 1200px) { 
             h1.catchline { font-size: 4.5rem; } 
+        }
+
+        .home_block_0 .hero_text p {
+            color: #e0e0e0 !important;
         }
 
         .red-highlight { color: #c4122f; font-weight: 600; }
@@ -120,10 +124,10 @@
                     <br class="d-none d-md-block">
                     Jsem váš spolehlivý makléř pro vietnamskou i českou klientelu.
                 </h1>
-                <p style="font-size: 1.5rem; color: #555; max-width: 800px; margin: 0 auto; font-weight: 500;">
+                <h3 class="catchline">
                     Pomohu vám <span class="red-highlight">prodat dům, byt nebo pozemek</span> bezpečně, rychle a za co nejlepší cenu.<br>
-                    Domluvím se <span class="red-highlight">česky i vietnamsky</span> – působím v Praze i ve Středočeském kraji.
-                </p>
+                    Domluvím se <span class="red-highlight">česky i vietnamsky</span> – působím v Praze a v blízkém okolí.
+                </h3>
             </div>
         </div>
     </div>
@@ -182,26 +186,67 @@
 
             <h3>Komplexní finanční poradenství</h3>
             <p>Nejsme pouze realitní makléři – jsme také finanční poradci. Díky propojení realitních a finančních služeb zajišťujeme hladší průběh celého procesu. Pomůžeme vám optimalizovat cash flow a vyřešit všechny finanční otázky spojené s nákupem či prodejem nemovitosti.</p>
+            
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                <a href="kalkulacka.html" class="btn btn-primary" style="background-color: #c4122f; border-color: #c4122f; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-transform: uppercase; border-radius: 5px;">
+                    Spočítejte si online
+                </a>
+            </div>
+            
             <p style="font-size: 0.9em; color: #555;"><em>Investiční služby, zprostředkování pojištění, úvěrů a penzijního spoření jsou poskytovány na základě registrace vázaného zástupce Ing. Minh Tu Pham, IČO 66473721, pod BEplan finanční plánování s.r.o., IČO 05779944.</em></p>
         </div>
     </section>
 
-    <section id="kontakt" class="section-padding" style="background: #f8f9fb;">
-        <div class="container text-center container-narrow">
-            <h2>Kontaktujte Mě</h2>
-            <img src="static/img/1tu.jpg" alt="Ing. Minh Tu Pham" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; border: 3px solid #c4122f;">
-            <div class="text-left">
-                <p><strong>Ing. Minh Tu Pham</strong><br>
-                Vedoucí infocentra Praha - Sapa: specialista na reality pro vietnamskou klientelu.</p>
-                <p><strong>Telefon:</strong> <a href="tel:+420778081986">+420 778 081 986</a> (WhatsApp, Viber)<br>
-                <strong>Email:</strong> <a href="mailto:tu.pham@kwcz.cz">tu.pham@kwcz.cz</a></p>
-                <p><strong>Adresa kanceláře:</strong> Libušská 319/126, 142 00 Praha 4-SAPA (5. patro, kancelář naproti Ivo).</p>
-                <p><strong>Doprava:</strong> Budova se nachází v blízkosti autobusové zastávky Sapa (linky 113, 197).</p>
-                <p><strong>Parkování:</strong> Doporučujeme parkovat v areálu Sapy před restaurací Dong Do nebo u budovy vedle autobusové zastávky.</p>
-                <p style="font-size: 0.9em; color: #555;"><em>Registrován u ČNB jako poradce pro úvěry, pojištění, investice a doplňkové penzijní spoření.<br>Zapsán v evidenci MPO pro činnost realitního zprostředkovatele.</em></p>
+    <section id="kontakt" class="section-padding" style="background:#f8f9fb;">
+        <div class="container container-narrow contact-card text-left">
+            
+            <div class="lang-toggle text-center mb-4">
+                <button onclick="setLang('cz')">🇨🇿 Čeština</button>
+                <button onclick="setLang('vn')">🇻🇳 Tiếng Việt</button>
             </div>
+
+            <h1 data-lang="cz" class="text-center mb-3">Kontakt – Reality & Finance</h1>
+            <h1 data-lang="vn" class="text-center mb-3" style="display:none;">Liên hệ – Bất động sản & Tài chính</h1>
+
+            <p class="intro" data-lang="cz" style="text-align:center; max-width:700px; margin:0 auto 30px;">
+                Spojte se se mnou pro profesionální služby v oblasti realit a financí.   
+                Poskytuji poradenství v nákupu/prodeji nemovitostí a řešení hypoték.
+            </p>
+            <p class="intro" data-lang="vn" style="display:none; text-align:center; max-width:700px; margin:0 auto 30px;">
+                Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính.   
+                Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
+            </p>
+
+            <h2 data-lang="cz" class="mb-3">Kontakt</h2>
+            <h2 data-lang="vn" class="mb-3" style="display:none;">Liên hệ</h2>
+
+            <p class="contact-item">
+                <i class="fas fa-phone"></i>
+                <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <strong>Email Reality:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <strong>Email Finance:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
+            </p>
+            <p class="contact-item">
+                <i class="fas fa-globe"></i>
+                <strong>Web:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
+            </p>
+            
         </div>
     </section>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
+            });
+        }
+    </script>
 
     <div class="section-padding" style="background-color: #ffffff;">
         <div class="container text-center">
@@ -213,7 +258,7 @@
 
     <footer>
         <div class="container">
-            <p>Jsem vietnamský realitní makléř a těší mě, když mohu pomoci lidem v Praze a Středočeském kraji prodat | koupit jejich domov.</p>
+            <p>Jsem vietnamský realitní makléř a těší mě, když mohu pomoci lidem v Praze a v blízkém okolí prodat | koupit jejich domov.</p>
         </div>
     </footer>
 
