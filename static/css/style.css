@@ -33,8 +33,14 @@ body {
     background-color: var(--background-color);
     line-height: 1.6;
 }
+.hero-headline {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
 
-/* Kontaktní sekce */
+/* Kontaktní sekce moi them ben tren */
 .contact-images-container {
     display: flex;
     justify-content: center;
