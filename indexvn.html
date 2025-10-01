@@ -82,6 +82,23 @@
         .text-left { text-align: left; }
         .container-narrow { max-width: 900px; margin: 0 auto; }
         .grid-2-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .floating-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #c4122f;
+            color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .floating-link:hover {
+            background-color: #a00f28;
+        }
     </style>
 </head>
 
@@ -110,168 +127,170 @@
         </nav>
     </header>
 
-    <div class="home_block home_block_0">
-        <div class="container">
-            <div class="hero_text">
-                <h1 class="catchline">
-                    Mua bán nhanh bất động sản của bạn với giá tốt nhất
-                </h1>
-                <h3 class="catchline">
-                    Môi giới cho cả khách hàng Séc và Việt.
+    <main>
+        <div class="home_block home_block_0">
+            <div class="container">
+                <div class="hero_text">
+                    <h1 class="catchline">
+                        Mua bán nhanh bất động sản của bạn với giá tốt nhất
+                    </h1>
+                    <h3 class="catchline">
+                        Môi giới cho cả khách hàng Séc và Việt.
 Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt động tại Praha và các vùng lân cận.
-                </h3>
+                    </h3>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <section id="main" class="section-padding" style="background-color: #ffffff;">
-        <div class="container container-narrow text-left">
-            <div class="reasons" style="margin-bottom: 40px;">
-  <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.45rem; line-height: 1.8; font-weight: 500; color: #222;">
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
-      <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
-      Bán bất động sản tại Praha và khu vực lân cận nhanh chóng, hiệu quả
-    </li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
-      <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
-      Môi giới uy tín cho cả khách hàng người Séc và người Việt
-    </li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
-      <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
-      Phong cách làm việc chuyên nghiệp, tận tâm trong từng giao dịch
-    </li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; font-weight: 600; color: #111;">
-      <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
-      Chủ nhà người Séc tin tưởng giao bán vì tôi mang đến cả khách Việt. Chủ nhà người Việt bán nhanh nhờ sự kết nối của tôi với thị trường Séc.
-    </li>
-  </ul>
-</div>
-            <h2>Bạn muốn mua bán bất động sản tại Praha nhanh chóng với giá tốt nhất?</h2>
-            <p>Hãy trao cho tài sản của bạn cơ hội tốt nhất để mua bán thành công – một cách an toàn, không căng thẳng và với lợi nhuận tối đa. Chúng tôi là chuyên gia cho cả khách hàng người Việt và người Séc, nhờ vào việc am hiểu cả hai ngôn ngữ và văn hóa, chúng tôi sẽ kết nối các thế giới và mở ra cánh cửa cho nhiều người mua tiềm năng hơn cho bất động sản của bạn.</p>
-            
-            <h3>Chúng tôi giúp bạn mua bán nhà như thế nào:</h3>
-            <h3>Bán nhà:</h3>
-<ul>
-  <li>Định giá thị trường tối ưu cho bất động sản</li>
-  <li>Chuẩn bị chiến dịch marketing và chụp ảnh chuyên nghiệp</li>
-  <li>Quảng bá rộng rãi trên các nền tảng trực tuyến và trong cộng đồng người Việt</li>
-  <li>Đảm bảo đầy đủ các thủ tục pháp lý và hành chính</li>
-  <li>Tích cực đàm phán với người mua để có được mức giá tốt nhất</li>
-  <li>Hỗ trợ toàn diện trong quá trình chuyển giao và bàn giao tài sản</li>
-</ul>
+        
+        <section id="main" class="section-padding" style="background-color: #ffffff;">
+            <div class="container container-narrow text-left">
+                <div class="reasons" style="margin-bottom: 40px;">
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.45rem; line-height: 1.8; font-weight: 500; color: #222;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                            <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
+                            Bán bất động sản tại Praha và khu vực lân cận nhanh chóng, hiệu quả
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                            <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
+                            Môi giới uy tín cho cả khách hàng người Séc và người Việt
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                            <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
+                            Phong cách làm việc chuyên nghiệp, tận tâm trong từng giao dịch
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; font-weight: 600; color: #111;">
+                            <span style="color: #28a745; font-weight: bold; margin-right: 10px; font-size: 1.4rem;">✓</span>
+                            Chủ nhà người Séc tin tưởng giao bán vì tôi mang đến cả khách Việt. Chủ nhà người Việt bán nhanh nhờ sự kết nối của tôi với thị trường Séc.
+                        </li>
+                    </ul>
+                </div>
+                <h2>Bạn muốn mua bán bất động sản tại Praha nhanh chóng với giá tốt nhất?</h2>
+                <p>Hãy trao cho tài sản của bạn cơ hội tốt nhất để mua bán thành công – một cách an toàn, không căng thẳng và với lợi nhuận tối đa. Chúng tôi là chuyên gia cho cả khách hàng người Việt và người Séc, nhờ vào việc am hiểu cả hai ngôn ngữ và văn hóa, chúng tôi sẽ kết nối các thế giới và mở ra cánh cửa cho nhiều người mua tiềm năng hơn cho bất động sản của bạn.</p>
+                
+                <h3>Chúng tôi giúp bạn mua bán nhà như thế nào:</h3>
+                <h3>Bán nhà:</h3>
+                <ul>
+                    <li>Định giá thị trường tối ưu cho bất động sản</li>
+                    <li>Chuẩn bị chiến dịch marketing và chụp ảnh chuyên nghiệp</li>
+                    <li>Quảng bá rộng rãi trên các nền tảng trực tuyến và trong cộng đồng người Việt</li>
+                    <li>Đảm bảo đầy đủ các thủ tục pháp lý và hành chính</li>
+                    <li>Tích cực đàm phán với người mua để có được mức giá tốt nhất</li>
+                    <li>Hỗ trợ toàn diện trong quá trình chuyển giao và bàn giao tài sản</li>
+                </ul>
 
-<h3>Mua nhà:</h3>
-<ul>
-  <li>Hỗ trợ tìm kiếm bất động sản phù hợp với nhu cầu và ngân sách của bạn</li>
-  <li>Hỗ trợ đàm phán giá cả và điều kiện mua bán</li>
-  <li>Hỗ trợ trong việc hoàn tất các thủ tục pháp lý và hành chính</li>
-  <li>Hỗ trợ trong quá trình chuyển giao và bàn giao tài sản</li>
-  <li>Hỗ trợ vay vốn ngân hàng và giải trình nguồn tiền nếu cần</li>
-</ul>
+                <h3>Mua nhà:</h3>
+                <ul>
+                    <li>Hỗ trợ tìm kiếm bất động sản phù hợp với nhu cầu và ngân sách của bạn</li>
+                    <li>Hỗ trợ đàm phán giá cả và điều kiện mua bán</li>
+                    <li>Hỗ trợ trong việc hoàn tất các thủ tục pháp lý và hành chính</li>
+                    <li>Hỗ trợ trong quá trình chuyển giao và bàn giao tài sản</li>
+                    <li>Hỗ trợ vay vốn ngân hàng và giải trình nguồn tiền nếu cần</li>
+                </ul>
 
 
-            <h2 class="cerveny-nadpis" style="margin-top: 40px;">Hiện đang tìm kiếm cho khách hàng tại Praha:</h2>
-            <ul>
-                <li>Nhà và căn hộ tại Praha 4 (Libuš, Písnice), Praha 5, 9, 10 và các khu vực lân cận</li>
-                <li>Đất đai phù hợp để xây dựng kho bãi gần TTTM SAPA</li>
-                <li>Căn hộ phù hợp cho sinh viên gần các trường đại học</li>
-            </ul>
-            <p><strong>Hãy liên hệ ngay hôm nay – việc bán nhà thành công của bạn bắt đầu từ đây!</strong></p>
-        </div>
-    </section>
+                <h2 class="cerveny-nadpis" style="margin-top: 40px;">Hiện đang tìm kiếm cho khách hàng tại Praha:</h2>
+                <ul>
+                    <li>Nhà và căn hộ tại Praha 4 (Libuš, Písnice), Praha 5, 9, 10 và các khu vực lân cận</li>
+                    <li>Đất đai phù hợp để xây dựng kho bãi gần TTTM SAPA</li>
+                    <li>Căn hộ phù hợp cho sinh viên gần các trường đại học</li>
+                </ul>
+                <p><strong>Hãy liên hệ ngay hôm nay – việc bán nhà thành công của bạn bắt đầu từ đây!</strong></p>
+            </div>
+        </section>
 
-    <section id="makler" class="section-padding" style="background: #f8f9fb;">
-        <div class="container">
-            <h2 class="section-title text-center" style="margin-bottom: 40px; color: #c4122f;">
-                Vì sao nên chọn một nhà môi giới người Việt
-            </h2>
-            <div class="grid-2-col container-narrow">
-                <article><h3>📈 Nhu cầu cao</h3><p>Khách hàng người Việt có nhu cầu mua bất động sản rất lớn và thường đã chuẩn bị sẵn tài chính. Các giao dịch diễn ra dựa trên sự tin tưởng. Ngoài ra, nhiều khách hàng người Séc cũng rất ưa chuộng mua từ người Việt, tạo thêm cơ hội cho giao dịch nhanh chóng.</p></article>
-                <article><h3>🌍 Thấu hiểu văn hóa</h3><p>Việc am hiểu ngôn ngữ và tâm lý của cộng đồng người Việt giúp cho việc giao tiếp được suôn sẻ và hiệu quả.</p></article>
-                <article><h3>🚀 Tiếp cận nhanh chóng</h3><p>Nhờ quan hệ trực tiếp với cộng đồng, chúng tôi có thể tiếp cận được nhiều người mua nghiêm túc và đã được xác minh.</p></article>
-                <article><h3>🤝 Tin cậy và được giới thiệu</h3><p>Tôi có uy tín và các mối quan hệ vững chắc trong cộng đồng, đây là nền tảng cho một giao dịch thành công.</p></article>
+        <section id="makler" class="section-padding" style="background: #f8f9fb;">
+            <div class="container">
+                <h2 class="section-title text-center" style="margin-bottom: 40px; color: #c4122f;">
+                    Vì sao nên chọn một nhà môi giới người Việt
+                </h2>
+                <div class="grid-2-col container-narrow">
+                    <article><h3>📈 Nhu cầu cao</h3><p>Khách hàng người Việt có nhu cầu mua bất động sản rất lớn và thường đã chuẩn bị sẵn tài chính. Các giao dịch diễn ra dựa trên sự tin tưởng. Ngoài ra, nhiều khách hàng người Séc cũng rất ưa chuộng mua từ người Việt, tạo thêm cơ hội cho giao dịch nhanh chóng.</p></article>
+                    <article><h3>🌍 Thấu hiểu văn hóa</h3><p>Việc am hiểu ngôn ngữ và tâm lý của cộng đồng người Việt giúp cho việc giao tiếp được suôn sẻ và hiệu quả.</p></article>
+                    <article><h3>🚀 Tiếp cận nhanh chóng</h3><p>Nhờ quan hệ trực tiếp với cộng đồng, chúng tôi có thể tiếp cận được nhiều người mua nghiêm túc và đã được xác minh.</p></article>
+                    <article><h3>🤝 Tin cậy và được giới thiệu</h3><p>Tôi có uy tín và các mối quan hệ vững chắc trong cộng đồng, đây là nền tảng cho một giao dịch thành công.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="tym" class="section-padding" style="background-color: #ffffff;">
+            <div class="container container-narrow text-left">
+                <h2>Sức mạnh Đội ngũ & Nền tảng Tài chính</h2>
+                <p>Bạn không hề đơn độc. Đứng sau tôi là một đội ngũ mạnh mẽ và các dịch vụ toàn diện, đảm bảo mọi giao dịch đều diễn ra suôn sẻ.</p>
+                
+                <h3>Sức mạnh từ đội ngũ</h3>
+                <ul>
+                    <li>Đội ngũ 20 chuyên gia giàu kinh nghiệm sẵn sàng trợ giúp</li>
+                    <li>Hợp tác chặt chẽ để chăm sóc toàn diện cho mọi khách hàng</li>
+                    <li>Chúng tôi xử lý mọi khía cạnh của việc bán, cho thuê và mua bất động sản</li>
+                </ul>
+
+                <h3>Hỗ trợ Vay vốn Mua nhà (Hypotéka)</h3>
+                <p>Chúng tôi hiểu rằng quá trình vay vốn có thể phức tạp. Vì vậy, chúng tôi cung cấp hỗ trợ toàn diện để đảm bảo khoản vay thế chấp từ các ngân hàng uy tín với điều kiện tối ưu. Đội ngũ tư vấn của chúng tôi sẽ hướng dẫn bạn toàn bộ quy trình – từ việc chọn sản phẩm đến việc có được lãi suất và điều kiện thanh toán tốt nhất.</p>
+
+                <h3>Tư vấn Tài chính Toàn diện</h3>
+                <p>Chúng tôi không chỉ là nhà môi giới bất động sản – chúng tôi còn là nhà tư vấn tài chính. Nhờ sự kết hợp giữa dịch vụ bất động sản và tài chính, chúng tôi đảm bảo toàn bộ quá trình diễn ra suôn sẻ hơn. Chúng tôi sẽ giúp bạn tối ưu hóa dòng tiền và giải quyết mọi vấn đề tài chính liên quan đến việc mua hoặc bán bất động sản.</p>
+                
+                <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+                    <a href="kalkulacka.html" class="btn btn-primary" style="background-color: #c4122f; border-color: #c4122f; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-transform: uppercase; border-radius: 5px;">
+                        Công Cụ Tính Toán Online
+                    </a>
+                </div>
+                
+                <p style="font-size: 0.9em; color: #555;"><em>Các dịch vụ đầu tư, môi giới bảo hiểm, tín dụng tiêu dùng và tiết kiệm hưu trí bổ sung được cung cấp trên cơ sở đăng ký đại lý liên kết Ing. Minh Tu Pham, IČO 66473721, thuộc nhà môi giới độc lập BEplan finanční plánování s.r.o., IČO 05779944.</em></p>
+            </div>
+        </section>
+
+        <section id="kontakt" class="section-padding" style="background:#f8f9fb;">
+            <div class="container container-narrow contact-card text-left">
+                <h1 class="text-center mb-3">Liên hệ – Bất động sản & Tài chính</h1>
+                <p class="intro" style="text-align:center; max-width:700px; margin:0 auto 30px;">
+                    Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính. Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
+                </p>
+
+                <h2 class="mb-3">Thông tin liên hệ</h2>
+                <p class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
+                </p>
+                <p class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email Bất động sản:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
+                </p>
+                <p class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Email Tài chính:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
+                </p>
+                <p class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <strong>Web Ngôi nhà may mắn:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
+                    <p class="contact-item" style="margin-top:5px; font-size:0.9em;">
+                        <img src="https://nnmm.cz/static/img/1tu.jpg" 
+                             alt="Ảnh đại diện của Ing. Phạm Minh Tứ" 
+                             class="profile-img" 
+                             style="width:20%; height:auto;" 
+                             loading="lazy" /> <br>
+                        Ing. Phạm Minh Tứ | IČO: 66473721 | Trụ sở: Praha
+                    </p>
+                </p>
+            </div>
+        </section>
+
+        <div class="section-padding" style="background-color: #ffffff;">
+            <div class="container text-center">
+                <h3>Trang Facebook bằng tiếng Việt 🇻🇳</h3>
+                <p>Theo dõi fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> để cập nhật các thông tin mới nhất.</p>
+                <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
             </div>
         </div>
-    </section>
-
-    <section id="tym" class="section-padding" style="background-color: #ffffff;">
-        <div class="container container-narrow text-left">
-            <h2>Sức mạnh Đội ngũ & Nền tảng Tài chính</h2>
-            <p>Bạn không hề đơn độc. Đứng sau tôi là một đội ngũ mạnh mẽ và các dịch vụ toàn diện, đảm bảo mọi giao dịch đều diễn ra suôn sẻ.</p>
-            
-            <h3>Sức mạnh từ đội ngũ</h3>
-            <ul>
-                <li>Đội ngũ 20 chuyên gia giàu kinh nghiệm sẵn sàng trợ giúp</li>
-                <li>Hợp tác chặt chẽ để chăm sóc toàn diện cho mọi khách hàng</li>
-                <li>Chúng tôi xử lý mọi khía cạnh của việc bán, cho thuê và mua bất động sản</li>
-            </ul>
-
-            <h3>Hỗ trợ Vay vốn Mua nhà (Hypotéka)</h3>
-            <p>Chúng tôi hiểu rằng quá trình vay vốn có thể phức tạp. Vì vậy, chúng tôi cung cấp hỗ trợ toàn diện để đảm bảo khoản vay thế chấp từ các ngân hàng uy tín với điều kiện tối ưu. Đội ngũ tư vấn của chúng tôi sẽ hướng dẫn bạn toàn bộ quy trình – từ việc chọn sản phẩm đến việc có được lãi suất và điều kiện thanh toán tốt nhất.</p>
-
-            <h3>Tư vấn Tài chính Toàn diện</h3>
-            <p>Chúng tôi không chỉ là nhà môi giới bất động sản – chúng tôi còn là nhà tư vấn tài chính. Nhờ sự kết hợp giữa dịch vụ bất động sản và tài chính, chúng tôi đảm bảo toàn bộ quá trình diễn ra suôn sẻ hơn. Chúng tôi sẽ giúp bạn tối ưu hóa dòng tiền và giải quyết mọi vấn đề tài chính liên quan đến việc mua hoặc bán bất động sản.</p>
-            
-            <div style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
-                <a href="kalkulacka.html" class="btn btn-primary" style="background-color: #c4122f; border-color: #c4122f; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; text-transform: uppercase; border-radius: 5px;">
-                    Công Cụ Tính Toán Online
-                </a>
-            </div>
-            
-            <p style="font-size: 0.9em; color: #555;"><em>Các dịch vụ đầu tư, môi giới bảo hiểm, tín dụng tiêu dùng và tiết kiệm hưu trí bổ sung được cung cấp trên cơ sở đăng ký đại lý liên kết Ing. Minh Tu Pham, IČO 66473721, thuộc nhà môi giới độc lập BEplan finanční plánování s.r.o., IČO 05779944.</em></p>
-        </div>
-    </section>
-
-    <section id="kontakt" class="section-padding" style="background:#f8f9fb;">
-        <div class="container container-narrow contact-card text-left">
-            <h1 class="text-center mb-3">Liên hệ – Bất động sản & Tài chính</h1>
-            <p class="intro" style="text-align:center; max-width:700px; margin:0 auto 30px;">
-                Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính. Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
-            </p>
-
-            <h2 class="mb-3">Thông tin liên hệ</h2>
-            <p class="contact-item">
-                <i class="fas fa-phone"></i>
-                <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
-            </p>
-            <p class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <strong>Email Bất động sản:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
-            </p>
-            <p class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <strong>Email Tài chính:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
-            </p>
-            <p class="contact-item">
-                <i class="fas fa-globe"></i>
-                <strong>Web Ngôi nhà may mắn:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
-                <p class="contact-item" style="margin-top:5px; font-size:0.9em;">
-                                <img src="https://nnmm.cz/static/img/1tu.jpg" 
-     alt="Profilová fotografie Ing. Minh Tu Pham" 
-     class="profile-img" 
-     style="width:20%; height:auto;" 
-     loading="lazy" /> <br>
-    Ing. Phạm Minh Tứ | IČO: 66473721 | Trụ sở: Praha
-</p>
-            </p>
-        </div>
-    </section>
-
-    <div class="section-padding" style="background-color: #ffffff;">
-        <div class="container text-center">
-            <h3>Trang Facebook bằng tiếng Việt 🇻🇳</h3>
-            <p>Theo dõi fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> để cập nhật các thông tin mới nhất.</p>
-            <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
-        </div>
-    </div>
+    </main>
 
     <footer>
-    <div class="container">
-        <p style="font-size: 0.9em; font-style: italic;">
-            Tôi là nhà môi giới bất động sản và tư vấn tài chính người Việt, rất vui được hỗ trợ mọi người tại Praha và các vùng lân cận trong việc bán hoặc mua nhà.
-        </p>
-    </div>
-</footer>
+        <div class="container">
+            <p style="font-size: 0.9em; font-style: italic;">
+                Tôi là nhà môi giới bất động sản và tư vấn tài chính người Việt, rất vui được hỗ trợ mọi người tại Praha và các vùng lân cận trong việc bán hoặc mua nhà.
+            </p>
+        </div>
+    </footer>
 
     <script src="static/libs/jquery/dist/jquery.min.js"></script>
     <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -292,5 +311,7 @@ Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt độn
         gtag('js', new Date());
         gtag('config', 'AW-730525492');
     </script>
+    
+    <a href="kalkulacka.html" class="floating-link">Bảng tính vay tiền | Kalkulačka</a>
 </body>
 </html>
