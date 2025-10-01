@@ -284,6 +284,39 @@
     </div>
 </footer>
 
+<a href="kalkulacka.html" class="floating-button">
+    <i class="fas fa-calculator"></i>
+    Kalkulačky|Bảng tính
+</a>
+
+<style>
+    .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #004d99;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .floating-button:hover {
+        background-color: #003366;
+        transform: scale(1.05);
+        color: white;
+    }
+    .floating-button i {
+        margin-right: 8px;
+    }
+</style>
+
     <script src="static/libs/jquery/dist/jquery.min.js"></script>
     <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="static/js/main.js"></script>
