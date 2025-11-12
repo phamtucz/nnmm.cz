@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Váš soubor style.css musí obsahovat úpravy pro zarovnání loga (height: 30px) -->
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/public.css">
 
@@ -50,6 +51,12 @@
         .floating-button { position:fixed; bottom:20px; right:20px; background-color:#004d99; color:white; padding:12px 20px; border-radius:50px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.2); z-index:1000; text-decoration:none; transition:background-color 0.3s, transform 0.3s; font-weight:bold; display:flex; align-items:center; }
         .floating-button:hover { background-color:#003366; transform:scale(1.05); color:white; }
         .floating-button i { margin-right:8px; }
+
+        /* OPRAVENÉ ZAROVNÁNÍ LOG A VLAJEK PRO PULL-RIGHT */
+        /* Musí být deklarováno v opačném pořadí, aby se zobrazily správně (ČR, VN, KW) */
+        .navbar-header .navbar-right-aligned {
+            float: right !important; /* Vynucení floatu */
+        }
     </style>
 </head>
 
@@ -63,14 +70,27 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a href="index.html"><img class="logo white" src="static/img/cz.jpg" alt="Česká vlajka"></a>
-                    <a href="indexvn.html"><img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka"></a>
-                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank"><img class="logo white" src="static/img/kwred.svg" style="float:right;" alt="Keller Williams Reality"></a>
+                    
+                    <!-- Vlajky a logo KW (ZAROVNÁNO DOPRAVA pomocí pull-right) -->
+                    <!-- KÓD V OPAČNÉM POŘADÍ pro správné zobrazení (KW, VN, ČR) -->
+                    
+                    <!-- 1. KW logo (zobrazí se nejdále vpravo) -->
+                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank" class="navbar-brand pull-right navbar-right-aligned"><img class="logo white" src="static/img/kwred.svg" alt="Keller Williams Reality"></a>
+                    
+                    <!-- 2. Vietnamská vlajka -->
+                    <a href="indexvn.html" class="navbar-brand pull-right navbar-right-aligned"><img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka"></a>
+                    
+                    <!-- 3. Česká vlajka (zobrazí se nejvíce vlevo z této skupiny) -->
+                    <a href="index.html" class="navbar-brand pull-right navbar-right-aligned"><img class="logo white" src="static/img/cz.jpg" alt="Česká vlajka"></a>
+                    
                 </div>
+                
+                <!-- Menu (ZAROVNÁNO DOPRAVA) -->
                 <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <!-- Používáme navbar-right pro klasické menu vpravo -->
+                    <ul class="nav navbar-nav navbar-right"> 
                         <li><a href="#main">Služby</a></li>
-                        <li><a href="#o-mne">O mně</a></li>
+                        <li><a href="#o-mne-sekce">O mně</a></li> <!-- Upraven odkaz na #o-mne-sekce pro sémantiku -->
                         <li><a href="#makler">Proč si vybrat mě</a></li>
                         <li><a href="#tym">Tým a Finance</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
@@ -109,6 +129,8 @@
             <p><strong>Kontaktujte mě ještě dnes – váš úspěšný prodej začíná zde!</strong></p>
         </div>
     </section>
+    
+    <!-- Sekce "Proč si vybrat mě" -->
     <section id="makler" class="section-padding" style="background: #f8f9fb;">
         <div class="container">
             <h2 class="section-title text-center" style="margin-bottom: 40px; color: #c4122f;">
@@ -123,6 +145,7 @@
         </div>
     </section>
 
+    <!-- Sekce "Tým a Finance" -->
     <section id="tym" class="section-padding" style="background-color: #ffffff;">
         <div class="container container-narrow text-left">
             <h2>Síla Našeho Týmu a Finanční Zázemí</h2>
@@ -151,111 +174,106 @@
         </div>
     </section>
 
+    <!-- Sekce O MNĚ (přesunuta sem pro sémantickou správnost, ale s kontaktem) -->
+    <section id="o-mne-sekce" class="section-padding" style="background-color:#f0f4f8;">
+        <div class="container" style="max-width:1100px; margin:0 auto;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:40px;">
+
+                <!-- 1. FOTOGRAFIE -->
+                <div style="flex:1 1 250px; text-align:center;">
+                    <img src="https://nnmm.cz/static/img/1tu.jpg" 
+                         alt="Profilová fotografie Ing. Minh Tu Pham" 
+                         style="width:230px; height:230px; object-fit:cover; border-radius:50%; border:6px solid #c4122f; box-shadow:0 6px 20px rgba(0,0,0,0.15);" />
+                </div>
+
+                <!-- 2. KONTAKTNÍ ÚDAJE -->
+                <div style="flex:2 1 400px; font-size:1.1rem; line-height:1.8; color:#333;">
+                    <h2 style="color:#c4122f; margin-bottom:15px; margin-top:0;">Ing. Minh Tu Pham – nebo jednoduše pan Tu</h2>
+                    
+                    <p style="margin:8px 0; font-size:1.1em; color:#666;">
+                        <i class="fas fa-id-card" style="color:#c4122f; width:25px;"></i>
+                        IČO: 66473721 | Sídlo: Praha
+                    </p>
+
+                    <p style="margin:8px 0;">
+                        <i class="fas fa-phone" style="color:#c4122f; width:25px;"></i>
+                        <strong>Tel:</strong> 
+                        <a href="tel:+420778081986" style="color:#000; text-decoration:none;">+420 778 081 986</a>
+                    </p>
+
+                    <p style="margin:8px 0;">
+                        <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
+                        <strong>Email Reality:</strong>
+                        <a href="mailto:pantu@nnmm.cz" style="color:#000; text-decoration:none;">pantu@nnmm.cz</a>; nebo 
+                        <a href="mailto:tu.pham@kwcz.cz" style="color:#000; text-decoration:none;">tu.pham@kwcz.cz</a>
+                    </p>
+
+                    <p style="margin:8px 0;">
+                        <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
+                        <strong>Email Finance:</strong>
+                        <a href="mailto:minhtu.pham@beplan.cz" style="color:#000; text-decoration:none;">minhtu.pham@beplan.cz</a>
+                    </p>
+
+                    <p style="margin:8px 0;">
+                        <i class="fas fa-globe" style="color:#c4122f; width:25px;"></i>
+                        <strong>Web:</strong> 
+                        <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration:none;">www.nnmm.cz</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. PŘÍBĚH O MNĚ (pod kontakty) -->
+            <h2 style="margin-top:40px;">Můj příběh</h2>
+
+            <p>Jmenuji se <strong>Minh Tu Pham</strong>, můžete mi říkat pan Tu. Vystudoval jsem stavební fakultu na ČVUT v tehdejším Československu. Jsem ženatý, mám syna a dceru.</p>
+
+            <p>K realitám mě to táhlo vlastně přirozeně. Začalo to tím, že mě moji vietnamští přátelé a známí často žádali o radu a pomoc při koupi domů, bytů nebo obchodů. Postupně jsem zjistil, že mě tahle práce <strong>neuvěřitelně baví</strong> a že má <strong>smysl</strong>. Bylo jasno: rozhodl jsem se do toho jít <strong>naplno</strong> a stát se realitním makléřem se vším všudy.</p>
+
+            <p>Dnes pomáhám nejen vietnamské komunitě, ale i mnoha českým klientům, kteří mi s důvěrou svěřují prodej svých nemovitostí.</p>
+
+            <p>Vím, že prodej nebo koupě domu je jedno z <strong>nejdůležitějších rozhodnutí v životě</strong>. Proto se snažím, aby celý proces probíhal co nejpohodlněji, srozumitelně a <strong>bez zbytečného stresu</strong>. Každý obchod beru jako osobní příběh – ne jen čísla a smlouvy.</p>
+
+            <p>Mám radost, když mohu lidem pomoci najít jejich vysněné bydlení nebo úspěšně prodat jejich nemovitost. Věřím, že dobrá zkušenost zůstane v paměti na dlouhou dobu – a přesně o to mi jde: aby se na tuto kapitolu svého života moji klienti ohlíželi s úsměvem.</p>
+
+            <p>Těším se na setkání s vámi.</p>
+        </div>
+    </section>
+
+    <!-- Sekce "Kontakt" (formulář/další kontaktní prvky) -->
     <section id="kontakt" class="section-padding" style="background:#f8f9fb;">
         <div class="container container-narrow contact-card text-left">
             <h1 data-lang="cz" class="text-center mb-3">Kontakt – Reality & Finance</h1>
             <p class="intro" data-lang="cz" style="text-align:center; max-width:700px; margin:0 auto 30px;">
-                Spojte se se mnou pro profesionální služby v oblasti realit a financí.    
+                Spojte se se mnou pro profesionální služby v oblasti realit a financí.
                 Poskytuji poradenství v nákupu/prodeji nemovitostí a řešení hypoték.
             </p>
-<section id="o-mne" class="section-padding" style="background-color:#f0f4f8; padding:10px 10px;">
-  <div class="container" style="max-width:1100px; margin:0 auto;">
-    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:40px;">
-
-      <!-- ẢNH BÊN TRÁI -->
-      <div style="flex:1 1 250px; text-align:center;">
-        <img src="https://nnmm.cz/static/img/1tu.jpg" 
-             alt="Profilová fotografie Ing. Minh Tu Pham" 
-             style="width:230px; height:230px; object-fit:cover; border-radius:50%; border:6px solid #c4122f; box-shadow:0 6px 20px rgba(0,0,0,0.15);" />
-      </div>
-
-      <!-- THÔNG TIN LIÊN HỆ BÊN PHẢI -->
-      <div style="flex:2 1 400px; font-size:1.1rem; line-height:1.8; color:#333;">
-        <h2 style="color:#c4122f; margin-bottom:15px;">Ing. Minh Tu Pham – nebo jednoduše pan Tu</h2>
-                <p style="margin:8px 0; font-size:1.1 em; color:#666;">
-          <i class="fas fa-id-card" style="color:#c4122f; width:25px;"></i>
-IČO: 66473721 | Sídlo: Praha
-        </p>
-
-        <p style="margin:8px 0;">
-          <i class="fas fa-phone" style="color:#c4122f; width:25px;"></i>
-          <strong>Tel:</strong> 
-          <a href="tel:+420778081986" style="color:#000; text-decoration:none;">+420 778 081 986</a>
-        </p>
-
-        <p style="margin:8px 0;">
-          <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
-          <strong>Email Reality:</strong>
-          <a href="mailto:pantu@nnmm.cz" style="color:#000; text-decoration:none;">pantu@nnmm.cz</a>; nebo 
-          <a href="mailto:tu.pham@kwcz.cz" style="color:#000; text-decoration:none;">tu.pham@kwcz.cz</a>
-        </p>
-
-        <p style="margin:8px 0;">
-          <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
-          <strong>Email Finance:</strong>
-          <a href="mailto:minhtu.pham@beplan.cz" style="color:#000; text-decoration:none;">minhtu.pham@beplan.cz</a>
-        </p>
-
-        <p style="margin:8px 0;">
-          <i class="fas fa-globe" style="color:#c4122f; width:25px;"></i>
-          <strong>Web:</strong> 
-          <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration:none;">www.nnmm.cz</a>
-        </p>
-      </div>
-    </div>
-
-    <!-- PHẦN GIỚI THIỆU DƯỚI -->
-    <div style="margin-top:60px; background-color:#fff; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); padding:50px;">
-      <div style="font-size:1.15 rem; line-height:1.9; color:#333;">
-        <p>Jmenuji se Minh Tu Pham, můžete mi říkat pan Tu. Vystudoval jsem stavební fakultu na ČVUT v tehdejším Československu. Jsem ženatý, mám syna a dceru.</p>
-
-        <p>K realitám jsem se dostal docela přirozeně. Moji vietnamští přátelé a známí mě často žádali o pomoc při koupi domů, bytů nebo obchodů. Postupem času jsem si uvědomil, že mě tahle práce opravdu baví, a rozhodl jsem se ji dělat naplno – jako profesionální realitní makléř.</p>
-
-        <p>Dnes pomáhám nejen vietnamské komunitě, ale i mnoha českým klientům, kteří mi s důvěrou svěřují prodej svých nemovitostí.</p>
-
-        <p>Vím, že prodej nebo koupě domu je jedno z nejdůležitějších rozhodnutí v životě. Proto se snažím, aby celý proces probíhal co nejpohodlněji, srozumitelně a bez zbytečného stresu. Každý obchod beru jako osobní příběh – ne jen čísla a smlouvy.</p>
-
-        <p>Mám radost, když mohu lidem pomoci najít jejich vysněné bydlení nebo úspěšně prodat jejich nemovitost. Věřím, že dobrá zkušenost zůstane v paměti na dlouhou dobu – a přesně o to mi jde: aby se na tuto kapitolu svého života moji klienti ohlíželi s úsměvem.</p>
-
-        <p style="text-align:center; margin-top:25px; font-weight:bold;">Těším se na setkání s vámi.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
+            
+            <!-- FB SEKCE -->
+            <div class="section-padding" style="background-color: #ffffff;">
+                <div class="container text-center">
+                    <h3>Facebooková stránka ve vietnamštině 🇻🇳</h3>
+                    <p>Sledujte naši fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> pro aktuální informace.</p>
+                    <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
+                </div>
+            </div>
+            
         </div>
     </section>
-    <script>
-        function setLang(lang) {
-            document.querySelectorAll('[data-lang]').forEach(el => {
-                el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
-            });
-        }
-    </script>
+    
+    <!-- Původní kontaktní sekce byla přesunuta do O MNĚ, aby se spojily informace -->
 
-    <div class="section-padding" style="background-color: #ffffff;">
-        <div class="container text-center">
-            <h3>Facebooková stránka ve vietnamštině 🇻🇳</h3>
-            <p>Sledujte naši fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> pro aktuální informace.</p>
-            <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
+    <footer>
+        <div class="container">
+            <p style="font-size: 0.9em; font-style: italic;">
+                Jsem vietnamský realitní makléř a finanční poradce, rád pomáhám lidem v Praze a jejím okolí při prodeji nebo koupi jejich domova.
+            </p>
         </div>
-    </div>
+    </footer>
 
-<footer>
-    <div class="container">
-        <p style="font-size: 0.9em; font-style: italic;">
-            Jsem vietnamský realitní makléř a finanční poradce, rád pomáhám lidem v Praze a jejím okolí při prodeji nebo koupi jejich domova.
-        </p>
-    </div>
-</footer>
-
-<a href="kalkulacka.html" class="floating-button">
-    <i class="fas fa-calculator"></i>
-    Finanční kalkulačky | Bảng tính tài chính
-</a>
+    <a href="kalkulacka.html" class="floating-button">
+        <i class="fas fa-calculator"></i>
+        Finanční kalkulačky | Bảng tính tài chính
+    </a>
     <script src="static/libs/jquery/dist/jquery.min.js"></script>
     <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="static/js/main.js"></script>
@@ -274,6 +292,14 @@ IČO: 66473721 | Sídlo: Praha
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'AW-730525492');
+    </script>
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = (el.getAttribute('data-lang') === lang) ? 'block' : 'none';
+            });
+        }
+        // Váš kód neobsahoval volání této funkce, ale ponechávám ji pro případné budoucí použití.
     </script>
 </body>
 </html>

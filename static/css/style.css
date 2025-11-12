@@ -34,10 +34,10 @@ body {
     line-height: 1.6;
 }
 .hero-headline {
-  font-size: 1.25rem;
-  line-height: 1.3;
-  margin: 0 0 0.75rem;
-  font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 0 0 0.75rem;
+    font-weight: 600;
 }
 
 /* Kontaktní sekce moi them ben tren */
@@ -213,4 +213,15 @@ body.loading .waiting_modal {
         overflow-x: auto;
         white-space: nowrap;
     }
+}
+
+/* === Úpravy Navigace pro vertikální zarovnání (Přidáno) === */
+/* Toto CSS zajistí, že logo v navigační liště je správně zarovnané a má rozumnou výšku */
+.navbar-header .navbar-brand img.logo {
+    height: 30px; /* Nastavte pevnou výšku pro všechny obrázky */
+    vertical-align: middle; /* Zajistí vertikální zarovnání */
+}
+/* Aby se logo KW nechovalo jinak než vlajky (není potřeba, pokud mají stejnou třídu a velikost) */
+.navbar-header .navbar-brand.logo-kw img.logo {
+    height: 30px; /* Ujistěte se, že i KW logo má stejnou výšku */
 }
