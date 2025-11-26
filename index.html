@@ -63,7 +63,7 @@
         /* Language Switcher Logic */
         [data-lang] { display: none; }
         [data-lang].active { display: block; }
-        span[data-lang].active, a[data-lang].active, li[data-lang].active { display: inline-block; } /* Fix for inline elements */
+        span[data-lang].active, a[data-lang].active, li[data-lang].active { display: inline-block; } 
 
         /* Navbar */
         .navbar {
@@ -534,6 +534,8 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Zde se určuje výchozí jazyk.
+            // || 'cs' znamená: "Pokud není nic uloženo v paměti, použij češtinu".
             const savedLang = localStorage.getItem('preferredLang') || 'cs';
             setLanguage(savedLang);
         });
