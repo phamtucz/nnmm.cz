@@ -46,8 +46,9 @@
     <link rel="stylesheet" href="static/css/public.css">
     <style>
         :root {
-            --primary-color: #004d99; /* Navy Blue */
-            --secondary-color: #c4122f; /* Red */
+            /* FENG SHUI COLORS */
+            --primary-color: #004d99;   /* Tmavě modrá (Navy) - Stabilita, Hloubka */
+            --secondary-color: #00a2e8; /* Světlá modrá (Sky Blue) - Voda, Tok peněz, Komunikace */
             --text-color: #333;
             --bg-light: #f8f9fa;
         }
@@ -82,7 +83,7 @@
             margin: 0 10px;
             cursor: pointer;
         }
-        .nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+        .nav-link:hover, .nav-link.active { color: var(--secondary-color) !important; }
         
         .lang-btn {
             background: none;
@@ -148,10 +149,21 @@
             text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             z-index: 1000; transition: all 0.3s;
         }
-        .float-btn:hover { background: #a00015; color: white; transform: scale(1.05); }
+        .float-btn:hover { background: var(--primary-color); color: white; transform: scale(1.05); }
 
         footer { background: #222; color: white; padding: 40px 0 20px; text-align: center; }
         footer a { color: #ccc; text-decoration: none; }
+        
+        /* Custom Helper for Blue Text matching secondary */
+        .text-secondary-custom { color: var(--secondary-color) !important; }
+        .btn-outline-custom {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-outline-custom:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -197,7 +209,7 @@
                 <h3 class="lead text-muted mb-4">Ing. Minh Tu Pham – Váš most mezi českým trhem a bonitní vietnamskou komunitou.</h3>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="#kontakt" class="btn btn-primary btn-lg">Kontaktujte mě</a>
-                    <a href="kalkulacka.html" class="btn btn-outline-danger btn-lg">Finanční kalkulačka</a>
+                    <a href="kalkulacka.html" class="btn btn-outline-primary btn-lg">Finanční kalkulačka</a>
                 </div>
             </div>
             <div data-lang="vi">
@@ -205,7 +217,7 @@
                 <h3 class="lead text-muted mb-4">Kỹ sư Phạm Minh Tứ – Chuyên gia Bất động sản & Tài chính uy tín nhất cho người Việt tại Praha.</h3>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="#kontakt" class="btn btn-primary btn-lg">Liên hệ tư vấn</a>
-                    <a href="kalkulacka.html" class="btn btn-outline-danger btn-lg">Bảng tính tài chính</a>
+                    <a href="kalkulacka.html" class="btn btn-outline-primary btn-lg">Bảng tính tài chính</a>
                 </div>
             </div>
         </div>
@@ -320,9 +332,9 @@
                 </div>
             </div>
 
-            <div class="alert alert-danger mt-3">
-                <h5 data-lang="cs"><i class="fa-solid fa-bullhorn me-2"></i> Aktuálně pro své klienty hledám:</h5>
-                <h5 data-lang="vi"><i class="fa-solid fa-bullhorn me-2"></i> Hiện đang tìm gấp cho khách hàng:</h5>
+            <div class="alert alert-info mt-3" style="border-left: 5px solid var(--secondary-color);">
+                <h5 data-lang="cs"><i class="fa-solid fa-bullhorn me-2 text-secondary-custom"></i> Aktuálně pro své klienty hledám:</h5>
+                <h5 data-lang="vi"><i class="fa-solid fa-bullhorn me-2 text-secondary-custom"></i> Hiện đang tìm gấp cho khách hàng:</h5>
                 <ul class="mb-0" data-lang="cs">
                     <li>Rodinné domy a byty v Praze 4 (Libuš, Písnice), 5, 9, 10 a okolí.</li>
                     <li>Pozemky vhodné k výstavbě skladů poblíž SAPA.</li>
@@ -344,16 +356,16 @@
                     <div data-lang="cs" class="active">
                         <p class="lead"><strong>Cizinci kupují 20-30% nemovitostí v ČR. Umíte jim nabídnout tu svou?</strong></p>
                         <ul class="check-list">
-                            <li><i class="fa-solid fa-info-circle text-primary"></i> <strong>Bonitní klienti:</strong> Prodejci si Vietnamce chválí, protože často platí včas.</li>
-                            <li><i class="fa-solid fa-info-circle text-primary"></i> <strong>Pracovitost:</strong> Statistiky ukazují, že Vietnamci mají vysokou kupní sílu.</li>
-                            <li><i class="fa-solid fa-info-circle text-primary"></i> <strong>Investice:</strong> Často hledají komerční objekty a pozemky.</li>
+                            <li><i class="fa-solid fa-info-circle text-secondary-custom"></i> <strong>Bonitní klienti:</strong> Prodejci si Vietnamce chválí, protože často platí včas.</li>
+                            <li><i class="fa-solid fa-info-circle text-secondary-custom"></i> <strong>Pracovitost:</strong> Statistiky ukazují, že Vietnamci mají vysokou kupní sílu.</li>
+                            <li><i class="fa-solid fa-info-circle text-secondary-custom"></i> <strong>Investice:</strong> Často hledají komerční objekty a pozemky.</li>
                         </ul>
                     </div>
                     <div data-lang="vi">
                         <p class="lead"><strong>Người Việt khẳng định vị thế trên thị trường BĐS Séc.</strong></p>
                         <ul class="check-list">
-                            <li><i class="fa-solid fa-info-circle text-primary"></i> <strong>Uy tín tài chính:</strong> Các chủ nhà người Séc rất thích bán cho người Việt vì khả năng thanh toán.</li>
-                            <li><i class="fa-solid fa-info-circle text-primary"></i> <strong>Xu hướng mới:</strong> Chuyển dịch sang đầu tư căn hộ cho thuê và BĐS thương mại.</li>
+                            <li><i class="fa-solid fa-info-circle text-secondary-custom"></i> <strong>Uy tín tài chính:</strong> Các chủ nhà người Séc rất thích bán cho người Việt vì khả năng thanh toán.</li>
+                            <li><i class="fa-solid fa-info-circle text-secondary-custom"></i> <strong>Xu hướng mới:</strong> Chuyển dịch sang đầu tư căn hộ cho thuê và BĐS thương mại.</li>
                         </ul>
                     </div>
                 </div>
@@ -374,13 +386,13 @@
                         <p>Jmenuji se Minh Tu Pham. Vystudoval jsem stavební fakultu na ČVUT. Prahu považuji za svůj domov a mám zde rodinu.</p>
                         <p>K realitám mě přivedla touha pomáhat přátelům. Zjistil jsem, že propojení českého a vietnamského trhu je klíčem k úspěchu. Dnes vedu profesionální realitní praxi.</p>
                         
-                        <div class="alert alert-info mt-3 border-0 shadow-sm" style="background-color: #e3f2fd; border-left: 5px solid #004d99;">
-                             <strong><i class="fa-solid fa-circle-info text-primary"></i> Víte, že?</strong><br>
+                        <div class="alert alert-info mt-3 border-0 shadow-sm" style="background-color: #e3f2fd; border-left: 5px solid var(--secondary-color);">
+                             <strong><i class="fa-solid fa-circle-info text-secondary-custom"></i> Víte, že?</strong><br>
                              Mezi mými klienty (kupující i prodávající) tvoří <strong>65 až 80 % Češi</strong>. Zbývající část tvoří Vietnamci a jiní cizinci. Jsem makléř pro všechny.
                         </div>
 
                         <div class="bg-white p-3 rounded border mt-3">
-                            <h5 class="text-danger">Síla týmu & Zázemí</h5>
+                            <h5 class="text-secondary-custom">Síla týmu & Zázemí</h5>
                             <p class="mb-0">Nejste v tom sami. Za mnou stojí tým <strong>20 zkušených profesionálů</strong> a silné zázemí sítě <strong>Keller Williams</strong>.</p>
                         </div>
                     </div>
@@ -390,13 +402,13 @@
                         <h4 class="text-primary mb-3">Kỹ sư Phạm Minh Tứ (Pan Tu)</h4>
                         <p>Tôi tốt nghiệp Đại học Bách Khoa (ČVUT). Với phương châm "Làm việc bằng cái Tâm", tôi đã giúp hàng trăm gia đình người Việt an cư lạc nghiệp tại Séc.</p>
                         
-                        <div class="alert alert-info mt-3 border-0 shadow-sm" style="background-color: #e3f2fd; border-left: 5px solid #004d99;">
-                             <strong><i class="fa-solid fa-circle-info text-primary"></i> Bạn có biết?</strong><br>
+                        <div class="alert alert-info mt-3 border-0 shadow-sm" style="background-color: #e3f2fd; border-left: 5px solid var(--secondary-color);">
+                             <strong><i class="fa-solid fa-circle-info text-secondary-custom"></i> Bạn có biết?</strong><br>
                              <strong>65% đến 80%</strong> khách hàng của tôi (cả mua và bán) là người Séc. Phần còn lại là người Việt và người nước ngoài khác. Tôi là cầu nối thực sự giữa hai cộng đồng.
                         </div>
 
                         <div class="bg-white p-3 rounded border mt-3">
-                            <h5 class="text-danger">Sức mạnh đội ngũ</h5>
+                            <h5 class="text-secondary-custom">Sức mạnh đội ngũ</h5>
                             <p class="mb-0">Bạn không đơn độc. Đứng sau tôi là đội ngũ <strong>20 chuyên gia</strong> và tập đoàn <strong>Keller Williams</strong>. Chúng tôi giải quyết mọi vấn đề pháp lý.</p>
                         </div>
                     </div>
@@ -534,8 +546,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Zde se určuje výchozí jazyk.
-            // || 'cs' znamená: "Pokud není nic uloženo v paměti, použij češtinu".
+            // Výchozí čeština, pokud není uloženo jinak
             const savedLang = localStorage.getItem('preferredLang') || 'cs';
             setLanguage(savedLang);
         });
