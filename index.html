@@ -56,29 +56,84 @@
 <body>
     <div id="fb-root"></div>
 
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top unscrolled">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html"><img class="logo white" src="static/img/cz.jpg" alt="Česká vlajka"></a>
-                    <a href="indexvn.html"><img class="logo green" src="static/img/vn.jpg" alt="Vietnamská vlajka"></a>
-                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank"><img class="logo white" src="static/img/kwred.svg" style="float:right;" alt="Keller Williams Reality"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#main">Služby</a></li>
-                        <li><a href="#o-mne">O mně</a></li>
-                        <li><a href="#makler">Proč si vybrat mě</a></li>
-                        <li><a href="#tym">Tým a Finance</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <!-- Logo/Flags -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html" style="gap:10px;">
+                <img src="static/img/cz.jpg" alt="Česká vlajka" height="40">
+                <img src="static/img/vn.jpg" alt="Vietnamská vlajka" height="40">
+                <img src="static/img/kwred.svg" alt="Keller Williams Reality" height="40">
+            </a>
+
+            <!-- Toggle button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#main">Služby</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#o-mne">O mně</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#makler">Proč si vybrat mě</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tym">Tým a Finance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+
+<style>
+/* Toàn màn hình màu xanh */
+body {
+    margin:0;
+    padding:0;
+    background-color:#007BFF;
+}
+
+/* Navbar màu xanh (Bootstrap bg-primary) */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+/* Logo responsive */
+.navbar-brand img {
+    max-height: 40px;
+}
+
+/* Menu link màu trắng */
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* Hover màu nhạt */
+.nav-link:hover {
+    color: #cce5ff !important;
+}
+
+/* Khoảng cách giữa các logo */
+.navbar-brand img:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Mobile menu padding */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+</style>
+
+<!-- Bootstrap 5 JS (required for collapse) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <div class="home_block home_block_0">
         <div class="container">
