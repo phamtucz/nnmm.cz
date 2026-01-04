@@ -86,7 +86,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #006400;
+            background-color: #004d99; /* Změna barvy pro konzistenci s index.html */
             color: #ffffff;
             padding: 15px 25px;
             border-radius: 50px;
@@ -95,9 +95,16 @@
             z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease;
+            display: flex; /* Přidáno pro ikonu */
+            align-items: center;
         }
+        .floating-link i { margin-right: 8px; } /* Přidáno pro ikonu */
         .floating-link:hover {
-            background-color: #008000;
+            background-color: #003366;
+        }
+        /* OPRAVENÉ ZAROVNÁNÍ LOG A VLAJEK DOPRAVA */
+        .navbar-header .pull-right {
+            float: right !important;
         }
     </style>
 </head>
@@ -111,13 +118,25 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button>
-                    <a href="index.html"><img class="logo white" src="static/img/cz.jpg" alt="Cờ Séc"></a>
-                    <a href="indexvn.html"><img class="logo green" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
-                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank"><img class="logo white" src="static/img/kwred.svg" style="float: right;" alt="Keller Williams Reality"></a>
+                    
+                    <!-- Vlajky a logo KW (ZAROVNÁNO DOPRAVA pomocí pull-right) -->
+                    <!-- KÓD V OPAČNÉM POŘADÍ pro správné zobrazení (KW, VN, ČR) -->
+                    
+                    <!-- 1. KW logo (zobrazí se nejdále vpravo) -->
+                    <a href="https://www.kwcz.cz" rel="noopener" target="_blank" class="navbar-brand pull-right"><img class="logo white" src="static/img/kwred.svg" alt="Keller Williams Reality"></a>
+                    
+                    <!-- 2. Česká vlajka (V indexvn.html odkazuje zpět na index.html) -->
+                    <a href="index.html" class="navbar-brand pull-right"><img class="logo white" src="static/img/cz.jpg" alt="Cờ Séc"></a>
+                    
+                    <!-- 3. Vietnamská vlajka (zobrazí se nejvíce vlevo z této skupiny) -->
+                    <a href="indexvn.html" class="navbar-brand pull-right"><img class="logo green" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
+                    
                 </div>
+                
                 <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#main">Dịch Vụ</a></li>
+                        <li><a href="#ve-toi">Về tôi</a></li> <!-- PŘIDÁNO: Về tôi -->
                         <li><a href="#makler">Vì sao chọn tôi</a></li>
                         <li><a href="#tym">Đội ngũ & Tài chính</a></li>
                         <li><a href="#kontakt">Liên Hệ</a></li>
@@ -197,6 +216,71 @@ Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt độn
                 <p><strong>Hãy liên hệ ngay hôm nay – việc bán nhà thành công của bạn bắt đầu từ đây!</strong></p>
             </div>
         </section>
+        
+        <!-- PŘIDÁNA SEKCE VỀ TÔI (O MNĚ) -->
+        <section id="ve-toi" class="section-padding" style="background-color:#f0f4f8;">
+            <div class="container" style="max-width:1100px; margin:0 auto;">
+                <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:40px;">
+
+                    <!-- 1. ẢNH ĐẠI DIỆN -->
+                    <div style="flex:1 1 250px; text-align:center;">
+                        <img src="https://nnmm.cz/static/img/1tu.jpg" 
+                             alt="Ảnh đại diện của Ing. Phạm Minh Tứ" 
+                             style="width:230px; height:230px; object-fit:cover; border-radius:50%; border:6px solid #c4122f; box-shadow:0 6px 20px rgba(0,0,0,0.15);" />
+                    </div>
+
+                    <!-- 2. THÔNG TIN LIÊN HỆ -->
+                    <div style="flex:2 1 400px; font-size:1.1rem; line-height:1.8; color:#333;">
+                        <h2 style="color:#c4122f; margin-bottom:15px; margin-top:0;">KS. Phạm Minh Tứ – hay gọi đơn giản là anh Tứ</h2>
+                        
+                        <p style="margin:8px 0; font-size:1.1em; color:#666;">
+                            <i class="fas fa-id-card" style="color:#c4122f; width:25px;"></i>
+                            IČO: 66473721 | Trụ sở: Praha
+                        </p>
+
+                        <p style="margin:8px 0;">
+                            <i class="fas fa-phone" style="color:#c4122f; width:25px;"></i>
+                            <strong>Điện thoại:</strong> 
+                            <a href="tel:+420778081986" style="color:#000; text-decoration:none;">+420 778 081 986</a>
+                        </p>
+
+                        <p style="margin:8px 0;">
+                            <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
+                            <strong>Email Bất động sản:</strong>
+                            <a href="mailto:pantu@nnmm.cz" style="color:#000; text-decoration:none;">pantu@nnmm.cz</a>; hoặc 
+                            <a href="mailto:tu.pham@kwcz.cz" style="color:#000; text-decoration:none;">tu.pham@kwcz.cz</a>
+                        </p>
+
+                        <p style="margin:8px 0;">
+                            <i class="fas fa-envelope" style="color:#c4122f; width:25px;"></i>
+                            <strong>Email Tài chính:</strong>
+                            <a href="mailto:minhtu.pham@beplan.cz" style="color:#000; text-decoration:none;">minhtu.pham@beplan.cz</a>
+                        </p>
+
+                        <p style="margin:8px 0;">
+                            <i class="fas fa-globe" style="color:#c4122f; width:25px;"></i>
+                            <strong>Website:</strong> 
+                            <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer" style="color:#000; text-decoration:none;">www.nnmm.cz</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. CÂU CHUYỆN CỦA TÔI (PŘÍBĚH O MNĚ) - PŘELOŽENÁ ČÁST -->
+                <h2 style="margin-top:40px;">Câu chuyện của tôi</h2>
+
+                <p>Tôi tên là <strong>Phạm Minh Tứ</strong>, các bạn có thể gọi tôi là anh Tứ. Tôi tốt nghiệp Khoa Xây dựng tại Đại học Kỹ thuật Séc (ČVUT) tại Praha ở Tiệp Khắc trước đây. Tôi đã lập gia đình, có một con trai và một con gái.</p>
+
+                <p>Tôi đến với bất động sản một cách khá tự nhiên. Mọi chuyện bắt đầu khi bạn bè và người quen người Việt của tôi thường xuyên nhờ tôi tư vấn và giúp đỡ trong việc mua nhà, căn hộ hay cửa hàng. Dần dần, tôi nhận ra công việc này <strong>vô cùng thú vị</strong> và <strong>có ý nghĩa</strong>. Thế là rõ ràng rồi: Tôi quyết định dấn thân <strong>toàn tâm toàn ý</strong> và trở thành nhà môi giới bất động sản chuyên nghiệp.</p>
+
+                <p>Ngày nay, tôi không chỉ giúp đỡ cộng đồng người Việt, mà còn hỗ trợ nhiều khách hàng người Séc, những người đã tin tưởng giao phó việc bán bất động sản cho tôi.</p>
+
+                <p>Tôi hiểu rằng việc mua hay bán nhà là một trong những <strong>quyết định quan trọng nhất trong đời</strong>. Vì vậy, tôi cố gắng đảm bảo toàn bộ quá trình diễn ra một cách thoải mái, dễ hiểu và <strong>không căng thẳng</strong>. Tôi xem mỗi giao dịch là một câu chuyện cá nhân – chứ không chỉ là những con số và hợp đồng.</p>
+
+                <p>Tôi rất vui khi có thể giúp mọi người tìm được ngôi nhà mơ ước hoặc bán thành công bất động sản của họ. Tôi tin rằng một trải nghiệm tốt sẽ đọng lại trong ký ức lâu dài – và đó chính là mục tiêu của tôi: để khách hàng của tôi nhìn lại chương này của cuộc đời họ với nụ cười.</p>
+
+                <p>Rất mong được gặp gỡ các bạn.</p>
+            </div>
+        </section>
 
         <section id="makler" class="section-padding" style="background: #f8f9fb;">
             <div class="container">
@@ -247,41 +331,18 @@ Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt độn
                     Kết nối với tôi để được tư vấn chuyên nghiệp về bất động sản và tài chính. Hỗ trợ mua/bán nhà và giải pháp vay thế chấp hiệu quả.
                 </p>
 
-                <h2 class="mb-3">Thông tin liên hệ</h2>
-                <p class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <strong>Tel:</strong> <a href="tel:+420778081986">+420 778 081 986</a>
-                </p>
-                <p class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <strong>Email Bất động sản:</strong> <a href="mailto:minhtu.pham@nnmm.cz">minhtu.pham@nnmm.cz</a>
-                </p>
-                <p class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <strong>Email Tài chính:</strong> <a href="mailto:minhtu.pham@beplan.cz">minhtu.pham@beplan.cz</a>
-                </p>
-                <p class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <strong>Web Ngôi nhà may mắn:</strong> <a href="https://www.nnmm.cz" target="_blank" rel="noopener noreferrer">www.nnmm.cz</a>
-                    <p class="contact-item" style="margin-top:5px; font-size:0.9em;">
-                        <img src="https://nnmm.cz/static/img/1tu.jpg" 
-                             alt="Ảnh đại diện của Ing. Phạm Minh Tứ" 
-                             class="profile-img" 
-                             style="width:20%; height:auto;" 
-                             loading="lazy" /> <br>
-                        Ing. Phạm Minh Tứ | IČO: 66473721 | Trụ sở: Praha
-                    </p>
-                </p>
+                <!-- FB SEKCE -->
+                <div class="section-padding" style="background-color: #ffffff;">
+                    <div class="container text-center">
+                        <h3>Trang Facebook bằng tiếng Việt 🇻🇳</h3>
+                        <p>Theo dõi fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> để cập nhật các thông tin mới nhất.</p>
+                        <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
+                    </div>
+                </div>
+                
+                <!-- Původní kontaktní detaily byly přesunuty do sekce 'Về tôi' -->
             </div>
         </section>
-
-        <div class="section-padding" style="background-color: #ffffff;">
-            <div class="container text-center">
-                <h3>Trang Facebook bằng tiếng Việt 🇻🇳</h3>
-                <p>Theo dõi fanpage <a href="https://www.facebook.com/BDSphamtu" target="_blank" rel="noopener">BDSphamtu</a> để cập nhật các thông tin mới nhất.</p>
-                <div class="fb-page" data-tabs="timeline" data-href="https://www.facebook.com/BDSphamtu" data-width="380" data-hide-cover="false" data-show-facepile="true"></div>
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -312,6 +373,9 @@ Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt độn
         gtag('config', 'AW-730525492');
     </script>
     
-    <a href="kalkulacka.html" class="floating-link">Bảng tính vay tiền | Kalkulačka</a>
+    <a href="kalkulacka.html" class="floating-link">
+        <i class="fas fa-calculator"></i>
+        Bảng tính tài chính | Finanční kalkulačka
+    </a>
 </body>
 </html>
