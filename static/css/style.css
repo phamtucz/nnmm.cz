@@ -29,79 +29,29 @@ body {
 }
 
 /* --- Navbar (Thanh điều hướng) --- */
+/* Úsporná a elegantní horní lišta */
 .navbar {
-    min-height: 70px; /* Tăng chiều cao một chút cho thoáng */
-    background-color: var(--primary-color); /* Đổi sang màu Xanh */
-    transition: all 0.3s ease-in-out;
-    border: none;
+    min-height: 50px !important;
+    background-color: rgba(255, 255, 255, 0.95) !important; /* Bílé pozadí místo modrého */
+    border-bottom: 1px solid #eee !important;
+    padding: 2px 0 !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
 }
 
-.navbar .logo {
-    height: 45px; /* Tăng kích thước logo */
-    margin-top: 5px;
-}
-
-/* Nút trong navbar */
-.navbar .btn {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 15px;
-}
-.navbar .btn:hover {
-    background-color: #0077b3;
-}
-
-/* --- Xử lý Logo khi cuộn trang --- */
-/* Khi đã cuộn (nền xanh) */
-.navbar:not(.unscrolled) .logo.black {
-    display: none; /* Logo đen ẩn đi trên nền xanh */
-}
-
-.navbar:not(.unscrolled) .logo.white {
-    display: block; /* Hiện logo trắng */
-}
-
-/* Khi ở đầu trang (nền trong suốt) */
-.navbar.unscrolled {
-    background-color: transparent; /* Nền trong suốt */
-    box-shadow: none;
-}
-
-.navbar.unscrolled .logo.black {
-    display: none; /* Vẫn dùng logo trắng nếu nền ảnh tối, hoặc đổi thành block nếu nền sáng */
-}
-
-.navbar.unscrolled .logo.white {
-    display: block;
-}
-
-/* Menu trên Mobile */
-.navbar-collapse {
-    background: var(--primary-color); /* Nền menu mobile màu xanh */
-    padding: 10px;
-}
-
-.navbar.unscrolled .navbar-collapse {
-    /* Trên mobile, dù chưa cuộn thì menu xổ xuống vẫn phải có màu nền */
-    background-color: var(--primary-color); 
-}
-
-/* Link trong menu */
+/* Úprava textu v menu na tmavou, aby byl na bílé vidět */
 .navbar-nav > li > a {
-    color: rgba(255,255,255,0.9) !important;
-    font-weight: 500;
-    padding: 10px 15px;
-    transition: color 0.2s;
+    color: #004d99 !important; /* Tmavě modrá */
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
 }
 
-.navbar-nav > li > a:hover {
-    color: var(--secondary-color) !important;
-}
-
-.navbar.unscrolled .navbar-nav li > a {
-    color: #fff !important; /* Chữ màu trắng khi ở top */
+/* Odstranění modrého pruhu na mobilu */
+.navbar-collapse {
+    background: #ffffff !important;
 }
 
 /* --- Home Blocks (Phần nội dung chính) --- */
@@ -118,31 +68,10 @@ body {
 
 /* Hero Section (Ảnh bìa) */
 .home_block_0 {
-    /* Sửa đường dẫn ảnh cho phù hợp */
-    background-image: linear-gradient(rgba(0, 77, 153, 0.7), rgba(0, 77, 153, 0.5)), url('../img/cover.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 600px; /* Cao hơn để đẹp hơn */
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.home_block_0 .btn {
-    background-color: var(--secondary-color);
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
-
-.home_block_0 .btn:hover {
-    background-color: white;
-    color: var(--primary-color);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/landing-hero.png') !important; 
+    margin-top: 0 !important; /* Posune obrázek až k horní liště */
+    min-height: 80vh !important;
+    padding-top: 60px !important; /* Vytvoří místo pro úzkou lištu */
 }
 
 /* Các khối nội dung khác */
