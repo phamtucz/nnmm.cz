@@ -115,31 +115,31 @@
 <body>
     <div id="fb-root"></div>
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top unscrolled">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                    <a href="https://www.pantu.cz" rel="noopener" target="_blank" class="navbar-brand pull-right"><img class="logo white" src="static/img/pantu.png" alt="PanTu Reality"></a>
-                    
-                    <!-- 2. Česká vlajka (V indexvn.html odkazuje zpět na index.html) -->
-                    <a href="index.html" class="navbar-brand pull-right"><img class="logo white" src="static/img/cz.jpg" alt="Cờ Séc"></a>
-                    
-                    <!-- 3. Vietnamská vlajka (zobrazí se nejvíce vlevo z této skupiny) -->
-                    <a href="indexvn.html" class="navbar-brand pull-right"><img class="logo green" src="static/img/vn.jpg" alt="Cờ Việt Nam"></a>
-                    
-                </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 
-                <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#main">Dịch Vụ</a></li>
-                        <li><a href="#ve-toi">Về tôi</a></li> <!-- PŘIDÁNO: Về tôi -->
-                        <li><a href="#makler">Vì sao chọn tôi</a></li>
-                        <li><a href="#tym">Đội ngũ & Tài chính</a></li>
-                        <li><a href="#kontakt">Liên Hệ</a></li>
+                <div class="lang-switcher d-flex align-items-center">
+                    <a href="index.html"><img src="static/img/cz.jpg" alt="CZ"></a>
+                    <a href="indexvn.html"><img src="static/img/vn.jpg" alt="VN"></a>
+                    <a href="https://www.pantu.cz" target="_blank" class="ms-2">
+                        <img src="static/img/pantu.png" alt="PanTu" height="25" style="filter: grayscale(1) brightness(0.5);">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#sluzby">Služby</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#o-mne">O mně</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proc-ja">Proč já</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tym">Tým</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
