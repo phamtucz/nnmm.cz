@@ -1,21 +1,20 @@
 /* --- Biến màu sắc (Dễ dàng thay đổi sau này) --- */
 :root {
-    --primary-color: #004d99;   /* Xanh Navy - Ổn định */
-    --secondary-color: #00a2e8; /* Xanh da trời - Phát triển */
-    --highlight-color: #c4122f; /* Màu đỏ nhấn khi Hover */
+    --primary-color: #ffffff; /* Bílé odkazy menu */
+    --secondary-color: #00a2e8;
+    --highlight-color: #c4122f; /* červené při hover */
     --text-color: #333;
     --text-light: #f8f9fa;
     --gray-bg: #999;
 }
+
 
 /* --- Cấu trúc cơ bản --- */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     margin: 0;
-    padding-top: 50px !important; /* Tạo khoảng trống cho thanh Navbar cố định */
-}
-
+    
 .catchline {
     text-align: center;
     margin-bottom: 20px;
@@ -32,22 +31,11 @@ body {
 }
 
 /* --- Navbar (Thanh điều hướng) - Tối ưu siêu mỏng --- */
-.navbar.fixed-top {
-    min-height: 45px !important;
-    background-color: rgba(255, 255, 255, 0.95) !important; /* Trắng trong suốt nhẹ */
-    border-bottom: 1px solid #eee !important;
-    padding: 5px 0 !important;
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    z-index: 1030;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-}
 
 /* Menu links */
-.navbar-nav .nav-link, 
+.navbar-nav .nav-link,
 .navbar-nav > li > a {
-    color: var(--primary-color) !important;
+    color: var(--primary-color) !important; /* bude bílé */
     font-size: 14px !important;
     font-weight: 700 !important;
     text-transform: uppercase;
@@ -57,8 +45,9 @@ body {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav > li > a:hover {
-    color: var(--highlight-color) !important;
+    color: var(--highlight-color) !important; /* červené při hover */
 }
+
 
 /* Mobile Navbar background */
 .navbar-collapse {
@@ -93,7 +82,7 @@ body {
     min-height: 85vh; 
     padding: 40px 20px; 
     margin-top: -50px !important; /* Đẩy ảnh lên sát dưới thanh điều hướng */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/1tu.jpg') no-repeat center center !important; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/landing-hero.jpeg') no-repeat center center !important; 
     background-size: cover !important;
     color: #fff; 
 }
