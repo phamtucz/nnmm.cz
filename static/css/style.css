@@ -66,6 +66,9 @@ body {
 
 /* Hero Section (Ảnh bìa) */
 .home_block_0 {
+    .navbar-nav .nav-link:hover {
+    color: #0056b3 !important; /* Xanh sáng hơn khi di chuột */
+}
     display: flex; 
     align-items: center; 
     justify-content: center; 
