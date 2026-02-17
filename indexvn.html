@@ -37,116 +37,97 @@
     <link rel="stylesheet" href="static/css/public.css">
     
     <style>
-        body {
-            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.8;
-            color: #333;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-        }
-        h2 { font-size: 2.4rem; }
-        h3 { font-size: 1.8rem; }
-        .home_block_0 {
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            text-align: center; 
-            min-height: 85vh; 
-            padding: 60px 20px; 
-            /* Cesta k obrázku - ujistěte se, že soubor landing-hero.png je ve složce static/img/ */
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('static/img/landing-hero.png') no-repeat center center; 
-            background-size: cover;
-            color: #fff; 
-            margin-top: 0 !important;
-        }
-        h1.catchline {
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            text-align: center;
-            color: #ffffff;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-            letter-spacing: -1px;
-            font-size: 2.5rem; 
-        }
-        @media (min-width: 768px) { 
-            h1.catchline { font-size: 3.8rem; } 
-        }
-        @media (min-width: 1200px) { 
-            h1.catchline { font-size: 4.5rem; } 
-        }
-        .home_block_0 .hero_text p { color: #e0e0e0 !important; }
-        .red-highlight { color: #c4122f; font-weight: 600; }
-        .section-padding { padding: 60px 20px; }
-        .text-center { text-align: center; }
-        .text-left { text-align: left; }
-        .container-narrow { max-width: 900px; margin: 0 auto; }
-        .grid-2-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .floating-link {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #004d99; /* Změna barvy pro konzistenci s index.html */
-            color: #ffffff;
-            padding: 15px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease;
-            display: flex; /* Přidáno pro ikonu */
-            align-items: center;
-        }
-        .floating-link i { margin-right: 8px; } /* Přidáno pro ikonu */
-        .floating-link:hover {
-            background-color: #003366;
-        }
-        /* OPRAVENÉ ZAROVNÁNÍ LOG A VLAJEK DOPRAVA */
-        .navbar-header .pull-right {
-            float: right !important;
-        }
-    </style>
+    /* Základní nastavení a oprava odsazení kvůli fixní liště */
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333;
+        padding-top: 80px; /* Toto odsazení zabrání překrytí obsahu menu */
+    }
+
+    /* FIXNÍ HORNÍ LIŠTA - zajistí, že menu zůstane nahoře */
+    .navbar.fixed-top {
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1050;
+        background-color: #ffffff !important; 
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; font-weight: 700; }
+
+    /* HERO SEKCE - úvodní obrázek */
+    .home_block_0 { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        min-height: 85vh; 
+        padding: 60px 20px; 
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('static/img/landing-hero.png') no-repeat center center; 
+        background-size: cover;
+        color: #fff; 
+        margin-top: 0 !important;
+    }
+
+    h1.catchline { 
+        font-weight: 700; 
+        line-height: 1.2; 
+        margin-bottom: 30px; 
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.7); 
+        font-size: 2.5rem; 
+    }
+
+    @media(min-width:768px) { h1.catchline { font-size: 3.5rem; } }
+
+    /* MODRÉ PLOVOUCÍ TLAČÍTKO - aby bylo stejné jako v index.html */
+    .floating-link { 
+        position: fixed; bottom: 20px; right: 20px; 
+        background-color: #004d99; color: white !important; 
+        padding: 12px 25px; border-radius: 50px; 
+        text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+        z-index: 1000; text-decoration: none; 
+        font-weight: bold; display: flex; align-items: center; 
+        transition: 0.3s;
+    }
+    .floating-link:hover { background-color: #003366; transform: scale(1.05); }
+    .floating-link i { margin-right: 10px; }
+</style>
 </head>
 
 <body>
     <div id="fb-root"></div>
     <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top" 
+         style="background-color: rgba(255,255,255,0.9); box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index:1050;">
+        <div class="container d-flex justify-content-between align-items-center">
             
-            <div class="lang-switcher">
-                <a href="index.html" title="Tiếng Séc">
-                    <img src="static/img/cz.jpg" alt="CZ">
-                </a>
-                <a href="indexvn.html" title="Tiếng Việt">
-                    <img src="static/img/vn.jpg" alt="VN">
-                </a>
+            <div class="d-flex align-items-center" style="gap: 8px;">
+                <a href="index.html"><img src="static/img/cz.jpg" alt="CZ" height="25"></a>
+                <a href="indexvn.html"><img src="static/img/vn.jpg" alt="VN" height="25"></a>
                 <a href="https://www.pantu.cz" target="_blank" class="ms-2">
-                    <img src="static/img/pantu.png" alt="PanTu" height="25" style="filter: grayscale(1) brightness(0.3);">
+                    <img src="static/img/pantu.png" alt="PanTu" height="30" style="filter: brightness(0.5);">
                 </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <ul class="navbar-nav d-flex flex-row gap-4" style="list-style:none; padding:0; margin:0;">
+                <li class="nav-item"><a class="nav-link" href="#main">Dịch vụ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ve-toi">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#makler">Tại sao chọn tôi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tym">Đội ngũ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Liên hệ</a></li>
+            </ul>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color:#fff;">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#main">Dịch vụ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ve-toi">Giới thiệu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#makler">Tại sao chọn tôi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tym">Đội ngũ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontakt">Liên hệ</a></li>
-                </ul>
-            </div>
-
         </div>
     </nav>
-</header>
+    </header>
 
     <main>
         <div class="home_block home_block_0">
@@ -380,8 +361,8 @@ Tiếp cận cá nhân, uy tín và kết quả tối đa. <br><br>Hoạt độn
     </script>
     
     <a href="kalkulacka.html" class="floating-link">
-        <i class="fas fa-calculator"></i>
-        Bảng tính tài chính | Finanční kalkulačka
+    <i class="fas fa-calculator"></i>
+    Bảng tính tài chính | Finanční kalkulačka
     </a>
 </body>
 </html>
